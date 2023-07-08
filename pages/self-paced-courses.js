@@ -55,7 +55,7 @@ function SelfPacedCoursesPage() {
 }
 
 
-<div className="grid gap-4 grid-cols-1 md:grid-cols-3">
+<div className=" grid gap-4 grid-cols-1 md:grid-cols-3">
 
 {courses.map((course, index) => (
                     <Course key={index} course={course}/>

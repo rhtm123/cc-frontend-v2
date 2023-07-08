@@ -68,7 +68,7 @@ function CoursePage({data,error}) {
     {topics.map((topic, index) => 
     
     <li>
-        <details open>
+        <details>
         <summary>{topic.name}</summary>
         
         <Lessons topic={topic} />

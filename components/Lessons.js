@@ -1,7 +1,8 @@
 
 import React from "react";
+import Link from "next/link";
 
-function Lessons({topic}) {
+function Lessons({topic, currentLesson}) {
 
     const [lessons, setLessons ] = React.useState([])
     const [loading, setLoading] = React.useState(true);
@@ -31,7 +32,7 @@ function Lessons({topic}) {
     return ( 
         <ul>
             {lessons.map((lesson, index) => (
-                <li><a>{lesson.name}</a></li>
+                <li><Link className={lesson.id===currentLesson?.id?"active":""} href={"/lesson/"+lesson.slug}>{lesson.name}</Link></li>
             ))}        
             
         </ul>
