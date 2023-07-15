@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useAppContext } from "@/context/state";
 import React from "react";
 import LiveCourse from "@/components/LiveCourse";
+import Head from "next/head";
 
 function LiveCoursesPage() {
 
@@ -27,6 +28,10 @@ function LiveCoursesPage() {
 
     return ( 
         <>
+    <Head>
+        <title>Online Live Courses | Coding Chaska</title>
+        <meta name="description" content="Online live courses, Live Classes, Assignments & Projects - Python, HTML, CSS, JavaScript, Django, React, Java" />
+    </Head>
 
 <div className="container">
 

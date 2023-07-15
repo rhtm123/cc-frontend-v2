@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { postData } from "@/utils/auth";
+import Head from "next/head";
 
 function ContactPage() {
 
@@ -30,9 +31,11 @@ function ContactPage() {
 
     return ( 
         <>
+      <Head>
+        <title>Contact | Coding Chaska</title>
+        <meta name="description" content="Want to learn Programming, Python, Website Development, Data Science? Feel free to contact us. We look forward to hearing from you" />
+      </Head>
             <div className="container">
-
-
             <div className="text-sm breadcrumbs">
   <ul>
     <li>

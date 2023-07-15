@@ -1,6 +1,7 @@
 import React from "react";
 import { useAppContext } from "@/context/state";
 import Course from "@/components/Course";
+import Head from "next/head";
 
 function SelfPacedCoursesPage() {
 
@@ -23,7 +24,11 @@ function SelfPacedCoursesPage() {
 
     return ( 
         <>
-        
+      <Head>
+        <title>Online Self Paced Courses | Coding Chaska</title>
+        <meta name="description" content="Online self paced courses - Python, HTML, CSS, JavaScript, Django, React, Java" />
+      </Head>
+
         <div className="container">
 
         <div className="text-sm breadcrumbs">

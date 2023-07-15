@@ -1,7 +1,15 @@
 import Link from "next/link";
+import Head from "next/head";
 function TermsOfServicePage() {
     return ( 
         <>
+        <Head>
+        <title>Coding Chaska | Terms of Service </title>
+        <meta name="description" content="Read the Terms of Service of Learning Setu Private Limited" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+      </Head>
+      
         <div className="container">
         <div className="text-sm breadcrumbs">
   <ul>

@@ -2,6 +2,7 @@ import { useAppContext } from "@/context/state";
 import React from "react";
 import QuickTutorialCard from "@/components/QuickTutorialCard";
 import Link from "next/link";
+import Head from "next/head";
 
 function QuickTutorialsPage() {
     // console.log(process.env)
@@ -44,7 +45,15 @@ function QuickTutorialsPage() {
 
 
     return ( 
+      <>
+      <Head>
+        <title>Quick Tutorials | Coding Chaska  </title>
+        <meta name="description" content="Quick tutorials, Blog Articles - Python, Django, Website development, Html, CSS, JavaScript, Reactjs, Nextjs" />
+      </Head>
+      
         <div className="container">
+
+          
 
 <div className="text-sm breadcrumbs">
   <ul>
@@ -80,6 +89,7 @@ function QuickTutorialsPage() {
 
             
         </div>
+  </>
      );
 }
 

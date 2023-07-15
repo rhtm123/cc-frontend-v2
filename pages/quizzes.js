@@ -1,6 +1,7 @@
 import Quiz from "@/components/Quiz";
 import Link from "next/link";
 import React from "react";
+import Head from "next/head";
 
 function QuizzesPage() {
 
@@ -47,6 +48,11 @@ React.useEffect(() => {
 
     return ( 
         <>
+      <Head>
+        <title>Solve MCQs (Multiple Choice Questions) | Coding Chaska</title>
+        <meta name="description" content="MCQ questions, Quizzes, Quiz on Python, HTML, CSS, JavaScript, React, Django, Database, SQL" />
+      </Head>
+
             <div className="container">
 
 <div className="text-sm breadcrumbs">

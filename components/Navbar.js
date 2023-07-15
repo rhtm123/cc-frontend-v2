@@ -1,8 +1,21 @@
 import { useTheme } from 'next-themes';
+import React from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+
 
 function Navbar() {
-  const { theme, setTheme } = useTheme()
+  const { theme, setTheme } = useTheme();
+  
+  const router = useRouter();
+
+React.useEffect(() => {
+  const All_Details = document.querySelectorAll('details');
+  All_Details.forEach(deet=>{
+    if (deet!=this && deet.open) deet.open = false
+  });
+
+}, [router.asPath]);
 
 
     return ( 
@@ -60,11 +73,11 @@ function Navbar() {
             <li><Link href="/quick-tutorials">Quick Tutorials</Link></li>
 
             <li>
-                                    <a rel="noreferrer" target='_blank' href="http://www.codingchaskalab.com/coding-problems"><span className="menu-text">Coding Problems</span></a>
-                                </li> 
-                                <li>
-                                    <a rel="noreferrer" target='_blank' href="http://www.codingchaskalab.com/write-code-online"><span className="menu-text">Write Code Online</span></a>
-                                </li> 
+                <a rel="noreferrer" target='_blank' href="http://www.codingchaskalab.com/coding-problems"><span className="menu-text">Coding Problems</span></a>
+            </li> 
+            <li>
+                <a rel="noreferrer" target='_blank' href="http://www.codingchaskalab.com/write-code-online"><span className="menu-text">Write Code Online</span></a>
+            </li> 
 
           </ul>
         </details>

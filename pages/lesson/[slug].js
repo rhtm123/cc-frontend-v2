@@ -4,6 +4,9 @@ import Error404 from "@/components/Error404";
 import Link from "next/link";
 
 import Lessons from "@/components/Lessons";
+import SolveQuiz from "@/components/SolveQuiz";
+
+import Head from "next/head";
 
 function LessonPage({data, error}) {
 
@@ -71,6 +74,14 @@ function LessonPage({data, error}) {
 
     return ( 
         <>
+        <Head>
+        <title>{data.name} - Coding Chaska</title>
+        <meta name="description" content={data?.detail.replace( /(<([^>]+)>)/ig, '').slice(0,120)} />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        {/* <meta name="robots" content="noindex" /> */}
+      </Head>
+      
         <div className="container">
         <div className="text-sm breadcrumbs">
   <ul>
@@ -129,6 +140,16 @@ function LessonPage({data, error}) {
 
                         <div  dangerouslySetInnerHTML={{ __html: data.detail }}></div>
             </div> }
+
+            {data.quiz && <div>
+
+                        <SolveQuiz quiz={data.quiz} />
+                        <br />
+                        <br />
+                    </div>
+
+            }
+
 
         </article>
 

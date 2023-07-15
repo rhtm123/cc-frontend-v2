@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { useAppContext } from "@/context/state";
 import Program from "@/components/Program";
+import Head from "next/head";
 
 function ProgramsPage() {
     const mycontext = useAppContext();
@@ -26,8 +27,13 @@ function ProgramsPage() {
 
     return ( 
         <>
-            <div className="container">
-            <div className="text-sm breadcrumbs">
+      <Head>
+        <title>Job Ready Programs | Coding Chaska</title>
+        <meta name="description" content="Learn Website Development, Frontend Development, Backend Development, Data Analytics, Data Science & Application Development from the industry expert and get a job" />
+      </Head>
+
+  <div className="container">
+  <div className="text-sm breadcrumbs">
   <ul>
     <li>
       <Link href={"/"}>

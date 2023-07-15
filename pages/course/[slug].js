@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import Lessons from "@/components/Lessons";
+import Head from "next/head";
+import Error404 from "@/components/Error404";
 
 function CoursePage({data,error}) {
 
@@ -27,10 +29,16 @@ function CoursePage({data,error}) {
       },[]);
 
 
+      if (error) return <Error404 />;
+
 
     return ( 
         <>
-        
+      <Head>
+        <title>{course.name} - Coding Chaska</title>
+        <meta name="robots" content="noindex" />
+
+      </Head>
         <div className="container">
 
 <div className="text-sm breadcrumbs">

@@ -1,11 +1,14 @@
-
+import Head from "next/head"
 
 
 export default function Home() {
   return (
+    <>
+    <Head>
+        <title>Home | Coding Chaska </title>
+        <meta name="description" content="Learn Website Development, Frontend Development, Backend Development, Data Science, Python JavaScript & App Development from the industry expert" />
+      </Head>
     <div className="container">
-    
-    
  <div className="hero min-h-screen">
   <div className="hero-content flex-col lg:flex-row-reverse">
     <img src="/images/about/about03/about-us-03-image-01.png" className="max-w-sm rounded-lg" />
@@ -79,5 +82,6 @@ export default function Home() {
 </div>
 
     </div>
+    </>
     )
 }

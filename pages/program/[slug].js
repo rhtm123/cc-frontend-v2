@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import JoinNow from "@/components/JoinNow";
 import Error404 from "@/components/Error404";
+import Head from "next/head";
 
 function ProgramPage({data, error}) {
 
@@ -24,15 +25,31 @@ function ProgramPage({data, error}) {
       }
     
       React.useEffect(() => {
-    
         getCourses();
-    
       },[data]);
 
     if (error) return (<Error404 />)
 
     return ( 
         <>
+<Head>
+        <title>{data.name} - Coding Chaska</title>
+        <meta name="description" content={data.detail.replace( /(<([^>]+)>)/ig, '').slice(0,120)} />
+
+        <meta name="image" content={data.image} />
+
+        {/* <!-- Schema.org for Google --> */}
+<meta itemProp="name" content={data.name} />
+<meta itemProp="description" content={data.detail.replace( /(<([^>]+)>)/ig, '').slice(0,120)} />
+<meta itemProp="image" content={data.image} />
+
+        {/* Facebook  */}
+        <meta property="og:title"         content={data.name} />
+        <meta property="og:description"   content={data.detail.replace( /(<([^>]+)>)/ig, '').slice(0,120)} />
+        <meta property="og:image"         content={data.image} />
+
+      </Head>
+      
         <div className="container">
         <div className="text-sm breadcrumbs">
   <ul>

@@ -1,7 +1,15 @@
 import Link from "next/link";
+import Head from "next/head";
+
 function PrivacyPolicyPage() {
     return ( 
         <>
+           <Head>
+        <title>Privacy Policy | Coding Chaska </title>
+        <meta name="description" content="Read the Privacy Policy of Learning Setu Private Limited" />
+      </Head>
+    
+
         <div className="container">
         <div className="text-sm breadcrumbs">
   <ul>

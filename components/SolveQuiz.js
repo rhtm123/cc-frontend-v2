@@ -147,7 +147,7 @@ function SolveQuiz({quiz}) {
 
   {!optionLoading && <div>
     {options.map((option,key)=>
-      <div key={key} style={{ padding:"4px 0" }}>
+      <div key={key}>
         {/* <label>
           <input className="radio" type="radio" id={option.id} onChange={handleChange} value={option.id} /> 
           {option.text}
@@ -155,7 +155,7 @@ function SolveQuiz({quiz}) {
 
         <div className="form-control">
         <label className="label cursor-pointer">
-            <span className="label-text">{option.text}</span> 
+            <span className="label-text">{key+1}_ {option.text}</span> 
             <input type="radio" id={option.id} onChange={handleChange} value={option.id} className="radio" />
         </label>
         </div>
@@ -185,7 +185,7 @@ function SolveQuiz({quiz}) {
 
 </div>:
 
-    <div style={{ 'padding':'2em', 'borderStyle': 'dotted' }}>
+    <div  className="border-2 border-secondary border-dashed" style={{ 'padding':'2em' }}>
 
     <h3> {quiz.name} ({questions.length} Questions) </h3>
     <div dangerouslySetInnerHTML={{__html:quiz.detail}} />

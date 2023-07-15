@@ -1,4 +1,10 @@
+import Head from "next/head";
 function AboutPage() {
+  <Head>
+        <title>About | Coding Chaska </title>
+        <meta name="description" content="We create an atmosphere where everyone develops a Chaska in coding. Join our programs and get your dream job" />
+  </Head>
+
     return (
         <>
         <div className="container">
