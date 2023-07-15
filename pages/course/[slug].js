@@ -35,7 +35,7 @@ function CoursePage({data,error}) {
     return ( 
         <>
       <Head>
-        <title>{course.name} - Coding Chaska</title>
+        <title>{data.name} - Coding Chaska</title>
         <meta name="robots" content="noindex" />
 
       </Head>

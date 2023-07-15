@@ -87,8 +87,8 @@ React.useEffect(() => {
 
     <select className="select select-sm" value={theme} onChange={e => setTheme(e.target.value)}>
       <option value="system">System</option>
-      <option value="cupcake">Dark</option>
-      <option value="light">Light</option>
+      <option value="forest">Dark</option>
+      <option value="cupcake">Light</option>
     </select>
   </div>
 </div>

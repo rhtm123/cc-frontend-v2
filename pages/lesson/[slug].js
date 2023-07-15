@@ -107,7 +107,7 @@ function LessonPage({data, error}) {
         
         <div className="md:flex md:gap-6">
         <div className="md:w-1/3">
-        <ul className="menu bg-base-200 rounded-box">
+        <ul className="hidden md:block menu bg-base-200 rounded-box">
     {topics.map((topic, index) => 
     
     <li>

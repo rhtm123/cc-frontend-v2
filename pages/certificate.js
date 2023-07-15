@@ -35,10 +35,7 @@ function CertificatePage() {
 
     return ( 
         <>
-      <Head>
-        <title>Coding Problems - Coding Chaska</title>
-        <meta name="description" content="Solve Coding Problems - Python Basics, Python Flow Control, Python Function, Object Oriented Programming" />
-      </Head>
+        
         <div className="container">
 
         <div className="text-sm breadcrumbs">

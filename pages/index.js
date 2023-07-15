@@ -1,4 +1,5 @@
-import Head from "next/head"
+import Head from "next/head";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
       <h1 className="text-5xl font-bold">Coding Chaska's Programs</h1>
 
       <p className="py-6">Join our <strong>Online Learning Platform</strong> and avail benefits of Job-Ready Programs at a reasonable free. Get expert assistance from our experienced trainers and mentors at every step in your journey. </p>
-      <button className="btn btn-primary">Get Started</button>
+     <Link href={"/programs"}><button className="btn btn-primary">Get Started</button></Link> 
     </div>
   </div>
 </div>
@@ -30,8 +31,8 @@ export default function Home() {
       <h1 className="text-5xl font-bold">Coding Chaska's Courses</h1>
       <p className="py-6">We have created self-paced online courses where you can advance your programming skills. These interactive courses contain a lot of problems, assignments & mini projects</p>
 
-      <button className="btn btn-primary">Live Courses</button>
-      <button className="ml-4 btn btn-primary">Self Paced Courses</button>
+      <Link href="/live-courses"><button className="btn btn-primary">Live Courses</button></Link>
+      <Link href="/self-paced-courses"><button className="ml-4 btn btn-primary">Self Paced Courses</button></Link>
 
     </div>
   </div>
@@ -44,8 +45,10 @@ export default function Home() {
       <h1 className="text-5xl font-bold">Quizzes & Coding Problems</h1>
 
 
-      <p className="py-6">We have created coding problems that will help you to improve you programming logic. It contains all types of problems for a beginner to an advanced coder.</p>      <button className="btn btn-primary">Quizzes</button>
-      <button className="ml-4 btn btn-primary">Coding Problems</button>
+      <p className="py-6">We have created coding problems that will help you to improve you programming logic. It contains all types of problems for a beginner to an advanced coder.</p>     
+      
+    <Link href="quizzes"><button className="btn btn-primary">Quizzes</button></Link>
+    <Link href="/coding-problems"> <button className="ml-4 btn btn-primary">Coding Problems</button></Link> 
 
     </div>
   </div>
@@ -58,7 +61,7 @@ export default function Home() {
       <h1 className="text-5xl font-bold">Write Code Online</h1>
       <p className="py-6">We have built our Online Editor where you can code without installing anything. Just register and start coding. Your works will be saved in your account.</p>
 
-      <button className="btn btn-primary">Start Now</button>
+     <a rel="noreferrer" target="_blank" href="http://www.codingchaskalab.com/write-code-online"><button className="btn btn-primary">Start Now</button></a>
     </div>
   </div>
 </div>
@@ -76,7 +79,7 @@ export default function Home() {
 
   </div>
 
-      <button className="btn btn-primary">Search on Google</button>
+    <a rel="noreferrer" target="_blank" href="https://www.google.com/search?q=codingchaska"><button className="btn btn-primary">Search on Google</button></a>
     </div>
   </div>
 </div>
