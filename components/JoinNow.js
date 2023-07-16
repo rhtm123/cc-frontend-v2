@@ -39,7 +39,7 @@ function JoinNow({courseName, purpose="join_course"}) {
     return ( 
         <>
 
-<button className="btn w-full" onClick={()=>window.my_modal_3.showModal()}>open modal</button>
+<button className="btn w-full" onClick={()=>window.my_modal_3.showModal()}>Request Demo Class</button>
 <dialog id="my_modal_3" className="modal">
   <div method="dialog" className="modal-box">
     
