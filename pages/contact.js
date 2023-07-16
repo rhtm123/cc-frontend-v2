@@ -53,17 +53,58 @@ function ContactPage() {
 
 <br />
 
-<div className="md:w-3/4 prose max-w-none m-auto">
+<div className="md:flex md:gap-6">
+        <div className="md:w-1/3">
+
+        <h1 className="text-2xl bold">Points of Contact</h1>
+
+        <br />
+        <div class="">
+              
+              <div class="grow">
+                <p class="mb-1 font-bold">
+                  Support
+                </p>
+                <p class="">
+                  codingchaska.info@gmail.com
+                </p>
+                <p class="">
+                  +91 9518901902
+                </p>
+              </div>
+            </div>
 
 
-<h2>Feel free to fill out the form below. We look forward to hearing from you</h2>
+          <br />
+            <div class="">
+              
+              <div class="grow">
+                <p class="mb-1 font-bold">
+                  Addresses
+                </p>
+                <p class="">
+                  005/3, Jai Vijay Nagar Building
+                </p>
+                <p class="">
+                  Oppsite Seven Square School
+                </p>
+              </div>
+            </div>
+
+
+
+        </div>
+
+        <div className="md:w-2/3 prose">
+
+        <h2>Feel free to fill out the form below. We look forward to hearing from you</h2>
 <form>
 
 <div className="mb-4 form-control w-full">
 <label className="label">
     <span className="label-text">Name:</span>
 </label>
-<input value={name} onChange={e=>setName(e.target.value)} type="text" placeholder="Type here" className="input input-bordered w-full" />
+<input value={name} onChange={e=>setName(e.target.value)} type="text" placeholder="name" className="input input-bordered w-full" />
 
 {error.name && <label className="label">
     <span className="label-text-alt text-error">{error.name}</span>
@@ -75,7 +116,7 @@ function ContactPage() {
 <label className="label">
     <span className="label-text">Email:</span>
 </label>
-<input value={email} onChange={e=>setEmail(e.target.value)} type="email" placeholder="Type here" className="input input-bordered w-full" />
+<input value={email} onChange={e=>setEmail(e.target.value)} type="email" placeholder="email" className="input input-bordered w-full" />
 
 {error.email && <label className="label">
     <span className="label-text-alt text-error">{error.email}</span>
@@ -87,7 +128,7 @@ function ContactPage() {
 <label className="label">
     <span className="label-text">Mobile:</span>
 </label>
-<input value={mobile} onChange={e=>setMobile(e.target.value)} type="text" placeholder="Type here" className="input input-bordered w-full" />
+<input value={mobile} onChange={e=>setMobile(e.target.value)} type="text" placeholder="mobile" className="input input-bordered w-full" />
 {error.mobile && <label className="label">
     <span className="label-text-alt text-error">{error.mobile}</span>
   </label> 
@@ -116,6 +157,13 @@ function ContactPage() {
 {msgSent && <p className="text-success">Thank You for sending your message. Our team will contact you soon.</p>}
 
     
+
+        </div>
+</div>
+<div className="md:w-3/4 prose max-w-none m-auto">
+
+
+
 
 </div>
 
