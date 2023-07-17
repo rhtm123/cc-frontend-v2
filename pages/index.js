@@ -48,7 +48,7 @@ export default function Home() {
       <p className="py-6">We have created coding problems that will help you to improve you programming logic. It contains all types of problems for a beginner to an advanced coder.</p>     
       
     <Link href="quizzes"><button className="btn btn-primary">Quizzes</button></Link>
-    <Link href="/coding-problems"> <button className="ml-4 btn btn-primary">Coding Problems</button></Link> 
+    <Link href="http://www.codingchaskalab.com/coding-problems"> <button className="ml-4 btn btn-primary">Coding Problems</button></Link> 
 
     </div>
   </div>
