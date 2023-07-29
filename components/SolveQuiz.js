@@ -136,51 +136,56 @@ function SolveQuiz({quiz}) {
 {started ?
 
 <div>
-  <div style={{ 'padding':'0.3em 0em' }}>
 
-  <h3 style={{ 'paddingTop':'0.2em' }}> {currentCount+1} of {questions.length} </h3>
+<div class="card card-compact bg-base-100 shadow-xl">
+  <div class="card-body">
+  <h2 class="card-title"> {currentCount+1} of {questions.length} </h2>
   <div dangerouslySetInnerHTML={{__html:currentQuestion.text}} />
-
-  </div>
 
   {optionLoading && <div>Loading...</div>}
 
-  {!optionLoading && <div>
-    {options.map((option,key)=>
-      <div key={key}>
-        {/* <label>
-          <input className="radio" type="radio" id={option.id} onChange={handleChange} value={option.id} /> 
-          {option.text}
-        </label> */}
+{!optionLoading && <div>
+  {options.map((option,key)=>
+    <div key={key}>
+      {/* <label>
+        <input className="radio" type="radio" id={option.id} onChange={handleChange} value={option.id} /> 
+        {option.text}
+      </label> */}
 
-        <div className="form-control">
-        <label className="label cursor-pointer">
-            <span className="label-text">{key+1}_ {option.text}</span> 
-            <input type="radio" id={option.id} onChange={handleChange} value={option.id} className="radio" />
-        </label>
-        </div>
-                    
+      <div className="form-control">
+      <label className="label justify-normal cursor-pointer">
+          <input type="radio" id={option.id} onChange={handleChange} value={option.id} className="radio" />
+
+          <span className="pl-4 label-text">{key+1}_ {option.text}</span> 
+      </label>
       </div>
-
-    )}
-    
-  </div>}
-
-  <br />
-  <div className='flex'>
-
-  <div style={{ width:"50%" }}> {currentCount>0 && <button className="btn btn-primary" onClick={()=>handleNP('p')}>Previous</button>}</div>
-
-  <div style={{ width:"50%",'textAlign':'right' }}> 
-            {currentCount<questions.length-1 ? <button className="btn btn-primary" onClick={()=>handleNP('n')}>Next</button>: <div>
-                
-                <button className="btn btn-primary" onClick={()=>handleSubmit()}>See the Result</button>
-                </div>
-
-             }
+                  
     </div>
 
+  )}
+  
+</div>}
+    
+    <div class="card-actions flex justify-between	">
+
+    <div > {currentCount>0 && <button className="btn btn-primary" onClick={()=>handleNP('p')}>Previous</button>}</div>
+
+<div> 
+          {currentCount<questions.length-1 ? <button className="btn btn-primary" onClick={()=>handleNP('n')}>Next</button>: <div>
+              
+              <button className="btn btn-primary" onClick={()=>handleSubmit()}>See the Result</button>
+              </div>
+
+           }
   </div>
+
+    </div>
+  </div>
+</div>
+
+  
+
+  <br />
 
 
 </div>:

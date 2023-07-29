@@ -51,7 +51,7 @@ function JoinNow({courseName, purpose="join_course"}) {
 <label className="label">
     <span className="label-text">Name:</span>
 </label>
-<input value={name} onChange={e=>setName(e.target.value)} type="text" placeholder="Type here" className="input input-bordered w-full" />
+<input value={name} onChange={e=>setName(e.target.value)} type="text" placeholder="Your Name here.." className="input input-bordered w-full" />
 
 {error.name && <label className="label">
     <span className="label-text-alt text-error">{error.name}</span>
@@ -63,7 +63,7 @@ function JoinNow({courseName, purpose="join_course"}) {
 <label className="label">
     <span className="label-text">Email:</span>
 </label>
-<input value={email} onChange={e=>setEmail(e.target.value)} type="email" placeholder="Type here" className="input input-bordered w-full" />
+<input value={email} onChange={e=>setEmail(e.target.value)} type="email" placeholder="Your Email Here.. " className="input input-bordered w-full" />
 
 {error.email && <label className="label">
     <span className="label-text-alt text-error">{error.email}</span>
@@ -75,7 +75,7 @@ function JoinNow({courseName, purpose="join_course"}) {
 <label className="label">
     <span className="label-text">Mobile:</span>
 </label>
-<input value={mobile} onChange={e=>setMobile(e.target.value)} type="text" placeholder="Type here" className="input input-bordered w-full" />
+<input value={mobile} onChange={e=>setMobile(e.target.value)} type="text" placeholder="Your Mobile Here.." className="input input-bordered w-full" />
 {error.mobile && <label className="label">
     <span className="label-text-alt text-error">{error.mobile}</span>
   </label> 

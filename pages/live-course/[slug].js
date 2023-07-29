@@ -127,6 +127,7 @@ export async function getServerSideProps(context) {
     const url = process.env.API_URL+"course/course/"+slug;
   
     const res = await fetch(url)
+    console.log(res)
     const error = res.ok ? false : true
     const data = await res.json()
   
