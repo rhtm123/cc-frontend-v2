@@ -10,7 +10,7 @@ function Layout({children}) {
     if (router.pathname.includes("embed")){
         return (<div>
                   <main>{children}</main>
-    
+
         </div>)
       }
 

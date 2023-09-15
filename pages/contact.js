@@ -35,7 +35,7 @@ function ContactPage() {
         <title>Contact | Coding Chaska</title>
         <meta name="description" content="Want to learn Programming, Python, Website Development, Data Science? Feel free to contact us. We look forward to hearing from you" />
       </Head>
-            <div className="container">
+            <div className="container max-w-none">
             <div className="text-sm breadcrumbs">
   <ul>
     <li>
@@ -86,7 +86,7 @@ function ContactPage() {
                   005/3, Jai Vijay Nagar Building
                 </p>
                 <p class="">
-                  Oppsite Seven Square School
+                  Oppsite Seven Square School, Naigaon East, Mumbai
                 </p>
               </div>
             </div>
@@ -95,7 +95,7 @@ function ContactPage() {
 
         </div>
 
-        <div className="md:w-2/3 prose">
+        <div className="md:w-2/3 prose max-w-none">
 
         <h2>Feel free to fill out the form below. We look forward to hearing from you</h2>
 <form>

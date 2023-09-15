@@ -50,7 +50,7 @@ function ProgramPage({data, error}) {
 
       </Head>
       
-        <div className="container">
+        <div className="container max-w-none">
         <div className="text-sm breadcrumbs">
   <ul>
     <li>
@@ -73,9 +73,9 @@ function ProgramPage({data, error}) {
 
 <br />
 
-<div className="tabs tabs-boxed">
-  <a onClick={()=>setActiveTab("overview")} className={activeTab=="overview"?"tab tab-active":"tab"}>Overview</a> 
-  <a onClick={()=>setActiveTab("curriculam")} className={activeTab=="curriculam"?"tab tab-active":"tab"}>Curriculam</a> 
+<div className="tabs tab-lg	">
+  <a onClick={()=>setActiveTab("overview")} className={activeTab=="overview"?"tab tab-active tab-lifted":"tab tab-lifted"}>Overview</a> 
+  <a onClick={()=>setActiveTab("curriculam")} className={activeTab=="curriculam"?"tab tab-active tab-lifted":"tab tab-lifted"}>Curriculam</a> 
 </div>
 
 <div className="grid md:grid-cols-3 gap-4">
@@ -94,8 +94,8 @@ function ProgramPage({data, error}) {
 <div>
     {courses.map((course, index) =>
 
-<details className="mt-4 collapse  collapse-plus bg-base-200">
-<summary className="collapse-title text-xl font-medium">{course.course.name}</summary>
+<details className="mt-4 collapse collapse-plus bg-base-200">
+<summary className="collapse-title font-medium">{course.course.name}</summary>
 <div className="collapse-content"> 
 <div  dangerouslySetInnerHTML={{ __html: course.course.content }}></div>
 

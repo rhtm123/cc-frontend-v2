@@ -51,7 +51,7 @@ function QuickTutorialsPage() {
         <meta name="description" content="Quick tutorials, Blog Articles - Python, Django, Website development, Html, CSS, JavaScript, Reactjs, Nextjs" />
       </Head>
       
-        <div className="container">
+        <div className="container max-w-none">
 
           
 

@@ -9,14 +9,14 @@ export default function Home() {
         <title>Home | Coding Chaska </title>
         <meta name="description" content="Learn Website Development, Frontend Development, Backend Development, Data Science, Python JavaScript & App Development from the industry expert" />
       </Head>
-    <div className="container">
+    <div className="container max-w-none">
  <div className="hero min-h-screen">
   <div className="hero-content flex-col lg:flex-row-reverse">
     <img src="/images/about/about03/about-us-03-image-01.png" className="max-w-sm rounded-lg" />
     <div>
       <h1 className="text-5xl font-bold">Coding Chaska's Programs</h1>
 
-      <p className="py-6">Join our <strong>Online Learning Platform</strong> and avail benefits of Job-Ready Programs at a reasonable free. Get expert assistance from our experienced trainers and mentors at every step in your journey. </p>
+      <p className="py-6">Avail benefits of Job-Ready Programs at a reasonable free. Get expert assistance from our experienced trainers and mentors at every step in your journey. </p>
      <Link href={"/programs"}><button className="btn btn-primary">Get Started</button></Link> 
     </div>
   </div>

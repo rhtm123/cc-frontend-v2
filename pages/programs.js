@@ -32,7 +32,7 @@ function ProgramsPage() {
         <meta name="description" content="Learn Website Development, Frontend Development, Backend Development, Data Analytics, Data Science & Application Development from the industry expert and get a job" />
       </Head>
 
-  <div className="container">
+  <div className="container max-w-none">
   <div className="text-sm breadcrumbs">
   <ul>
     <li>

@@ -42,11 +42,11 @@ React.useEffect(() => {
             <li><Link href="/quick-tutorials">Quick Tutorials</Link></li>
 
             <li>
-                                    <a rel="noreferrer" target='_blank' href="http://www.codingchaskalab.com/coding-problems"><span className="menu-text">Coding Problems</span></a>
-                                </li> 
-                                <li>
-                                    <a rel="noreferrer" target='_blank' href="http://www.codingchaskalab.com/write-code-online"><span className="menu-text">Write Code Online</span></a>
-                                </li> 
+              <a rel="noreferrer" target='_blank' href="http://www.codingchaskalab.com/coding-problems"><span className="menu-text">Coding Problems</span></a>
+            </li> 
+            <li>
+                <a rel="noreferrer" target='_blank' href="http://www.codingchaskalab.com/write-code-online"><span className="menu-text">Write Code Online</span></a>
+            </li> 
 
           </ul>
         </details>
@@ -56,7 +56,7 @@ React.useEffect(() => {
     </div>
 
     <Link href='/' className="btn btn-ghost normal-case text-xl">
-      <img width={"180px"} src="/images/logo/logo_rectangle.png" alt="Coding Chaska Logo" />
+      <img width={"180px"} src="/images/logo/logo.png" alt="Coding Chaska Logo" />
     </Link>
   </div>
   <div className="navbar-end hidden lg:flex">

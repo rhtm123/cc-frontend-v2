@@ -53,7 +53,7 @@ React.useEffect(() => {
         <meta name="description" content="MCQ questions, Quizzes, Quiz on Python, HTML, CSS, JavaScript, React, Django, Database, SQL" />
       </Head>
 
-            <div className="container">
+            <div className="container max-w-none">
 
 <div className="text-sm breadcrumbs">
   <ul>

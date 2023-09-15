@@ -29,7 +29,7 @@ function SelfPacedCoursesPage() {
         <meta name="description" content="Online self paced courses - Python, HTML, CSS, JavaScript, Django, React, Java" />
       </Head>
 
-        <div className="container">
+        <div className="container max-w-none">
 
         <div className="text-sm breadcrumbs">
   <ul>
