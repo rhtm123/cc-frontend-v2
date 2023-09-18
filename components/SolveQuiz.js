@@ -156,7 +156,7 @@ function SolveQuiz({quiz}) {
       <label className="label justify-normal cursor-pointer">
           <input type="radio" id={option.id} onChange={handleChange} value={option.id} className="radio" />
 
-          <span className="pl-4 label-text">{key+1}_ {option.text}</span> 
+          <span className="pl-4 label-text">{option.text}</span> 
       </label>
       </div>
                   
