@@ -7,7 +7,7 @@ function Footer() {
   <div className="col-span-2">
   <span>Proudly Made by Bhartiya <img className="inline" width={'20px'} src='/images/india-flag-icon.png' /></span> 
 
-  <h4 className="text-xl footer-widget-title">Coding Chaska</h4>
+  <h2 className="text-xl footer-widget-title">Coding Chaska</h2>
 
   <p>We create an atmosphere where everyone
     develops a Chaska in coding. Join our programs 
@@ -15,12 +15,13 @@ function Footer() {
   
   <br />
 
-  <h4 className="text-xl footer-widget-title">
+  <h2 className="text-xl footer-widget-title">
     Coding Chaska's Offline Institute
-  </h4>
+  </h2>
 
-  <p>
-Join us at our brand new institute in Naigaon East, Mumbai, where you can experience the advantages of in-person learning. Come visit our center and unlock the benefits of face-to-face classroom sessions.</p>
+  <h3>
+Join us at our brand new institute in Naigaon East, Mumbai, where you can experience the advantages of in-person learning. We are the first Coding and Computer Class in Naigaon East. Come visit our center and unlock the benefits of face-to-face classroom sessions.
+</h3>
 
   
     <div className="mt-4 grid grid-flow-col gap-4">
@@ -46,6 +47,8 @@ Join us at our brand new institute in Naigaon East, Mumbai, where you can experi
     <Link className="link link-hover" href={"/live-courses"}>Live Courses</Link> 
     <Link className="link link-hover" href="/quizzes">Solve MCQs</Link>
     <Link className="link link-hover" href="/quick-tutorials">Quick Tutorials</Link>
+    <Link className="link link-hover" href="/scholarship-program">Scholarship Program</Link>
+
     <Link className="link link-hover" href="/about">About us</Link>
     <Link className="link link-hover" href="/contact">Contact us</Link>
 

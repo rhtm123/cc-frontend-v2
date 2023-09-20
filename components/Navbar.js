@@ -20,7 +20,7 @@ React.useEffect(() => {
 
     return ( 
       
-        <div className="navbar bg-base-200">
+        <div className="navbar bg-base-200" style={{ borderBottom:"1.2px solid grey" }}>
 
 
       

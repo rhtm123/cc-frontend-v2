@@ -7,7 +7,7 @@ export default function Home() {
     <>
     <Head>
         <title>Home | Coding Chaska </title>
-        <meta name="description" content="Learn Website Development, Frontend Development, Backend Development, Data Science, Python JavaScript & App Development from the industry expert" />
+        <meta name="description" content="First Computer Classes in Naigaon East. Learn Website Development, Frontend Development, Backend Development, Data Science, Python JavaScript & App Development" />
       </Head>
     <div className="container max-w-none">
  <div className="hero min-h-screen">
@@ -70,7 +70,7 @@ export default function Home() {
 <div className="hero min-h-screen">
   <div className="hero-content text-center">
     <div className="max-w-lg">
-      <h1 className="text-4xl font-bold">We are highly rated on Google Reviews</h1>
+      <h1 className="text-4xl font-bold">We are highly rated on Google Reviews.</h1>
       <br />
 
       <div className='text-center'>
