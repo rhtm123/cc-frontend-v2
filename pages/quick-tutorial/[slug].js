@@ -11,10 +11,12 @@ function QuickTutorialPage({data, error}) {
         return (<Error404 />)
     }
 
+    let title = data.header + " | Coding Chaska";
+    
     return ( 
         <>
     <Head>
-        <title>{data.header} - Coding Chaska</title>
+        <title>{title}</title>
         <meta name="description" content={data.sub_header.replace( /(<([^>]+)>)/ig, '').slice(0,120)} />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 

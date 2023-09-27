@@ -29,10 +29,10 @@ function JoinNow({courseName, purpose="join_course"}) {
             short_msg:`${name} wants to learn ${courseName}`,
             purpose:purpose,
         }).then(data => {
-            console.log(data);
+            // console.log(data);
         }).catch(error => {
             // setError(error);
-            console.log(error);
+            // console.log(error);
         })
     }
 

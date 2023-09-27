@@ -24,6 +24,8 @@ function CCEditorWrapperEmbed({project,embed=false}) {
     // const { data: session } = useSession();
     // const [user, setUser] = React.useState();
     const [explorer, setExplorer] = React.useState();
+    const [verticleAlign, setverticleAlign] = React.useState(false);
+    
     // const [containerName, setContainerName] = React.useState();
     // const [loadingIframe, setLoadingIframe] = React.useState(true);
 
@@ -41,13 +43,13 @@ function CCEditorWrapperEmbed({project,embed=false}) {
       }
     
       const [windowDimension, setWindowDimension] = React.useState(getWindowDimensions());
-      React.useEffect(()=>{
-        if(windowDimension){
-          if(windowDimension.width<=700){
-            setverticleAlign(true);
-          }
-        }
-      },[windowDimension])
+      // React.useEffect(()=>{
+      //   if(windowDimension){
+      //     if(windowDimension.width<=700){
+      //       setverticleAlign(true);
+      //     }
+      //   }
+      // },[windowDimension])
 
       React.useEffect(()=> {
         let url = process.env.API_URL + "editor/projectcodes/?project="+project.id;
