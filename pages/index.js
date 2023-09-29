@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
 
+import { ScholarshipNav } from "@/components/BannerNav";
+
 
 export default function Home() {
   return (
@@ -9,6 +11,8 @@ export default function Home() {
         <title>Home | Coding Chaska </title>
         <meta name="description" content="First Computer Classes in Naigaon East. Learn Website Development, Frontend Development, Backend Development, Data Science, Python JavaScript & App Development" />
       </Head>
+
+
     <div className="container max-w-none">
  <div className="hero min-h-screen">
   <div className="hero-content flex-col lg:flex-row-reverse">

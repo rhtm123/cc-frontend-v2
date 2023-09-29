@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 
+
 function Navbar() {
   const { theme, setTheme } = useTheme();
   
@@ -19,8 +20,8 @@ React.useEffect(() => {
 
 
     return ( 
-      
-        <div className="navbar bg-base-200" style={{ borderBottom:"1.2px solid grey" }}>
+      <>
+        <div className="navbar bg-base-100" style={{ borderBottom:"1.2px solid grey" }}>
 
 
       
@@ -91,6 +92,7 @@ React.useEffect(() => {
     </select>
   </div>
 </div>
+</>
      );
 }
 
