@@ -82,7 +82,7 @@ function LessonPage({data, error}) {
         {/* <meta name="robots" content="noindex" /> */}
       </Head>
       
-        <div className="container">
+        <div className="container max-w-none">
         <div className="text-sm breadcrumbs">
   <ul>
     <li>

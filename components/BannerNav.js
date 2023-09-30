@@ -8,8 +8,8 @@ export function ScholarshipNav (){
      <div id="banner" tabindex="-1" className="z-50 bg-base-200 flex justify-center w-full px-4 py-3 border border-b border-gray-200 lg:py-4">
       <div className="items-center md:flex">
         <p className="text-sm font-medium md:my-0">
-          <span className="bg-primary text-base-100 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded hidden md:inline">New</span>
-          We have launched Scholarship Program
+          <span className="bg-primary text-base-100 text-xs font-semibold mr-2 px-1 py-0.5 rounded hidden md:inline">NEW</span>
+          Join Our Scholarship Program.
             <Link href="/scholarship-program/" className="inline-flex items-center ml-2 text-sm font-medium text-primary md:ml-2 hover:underline">
               Check it out
               <svg className="w-3 h-3 ml-1.5 text-primary" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
