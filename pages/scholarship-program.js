@@ -12,6 +12,14 @@ function ScholarshipProgram () {
     const [error, setError] = React.useState(false);
 
 
+	useEffect(() => {
+		// Event snippet for Website lead conversion page
+		gtag('event', 'conversion', {
+		  'send_to': 'AW-876457015/iKaNCNDJkugYELfY9qED'
+		});
+	  }, []);
+
+
     const handleClick = () => {
         var url = process.env.API_URL + 'auth/contact-us/';
         let email = "no email"
