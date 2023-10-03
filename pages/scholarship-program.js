@@ -2,6 +2,7 @@ import React from "react";
 import { postData } from "@/utils/auth";
 import Head from "next/head";
 
+
 function ScholarshipProgram () {
 
     const [name, setName] = React.useState("");
@@ -12,7 +13,7 @@ function ScholarshipProgram () {
     const [error, setError] = React.useState(false);
 
 
-	useEffect(() => {
+	React.useEffect(() => {
 		// Event snippet for Website lead conversion page
 		gtag('event', 'conversion', {
 		  'send_to': 'AW-876457015/iKaNCNDJkugYELfY9qED'
