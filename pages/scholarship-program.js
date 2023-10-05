@@ -24,8 +24,28 @@ function ScholarshipProgram () {
     const handleClick = () => {
         var url = process.env.API_URL + 'auth/contact-us/';
         let email = "no email"
-        let subject = "Scholarship Mobile "+mobile; 
+        let subject = "Scholarship Mobile - "+mobile + " - "+ name; 
         let msg = "Scholarship contact - " + mobile + " School Name - " + schoolName; 
+
+		let error1 = {};
+		let check = true;
+		if (!name) {
+			// console.log("Name not found");
+			error1['name'] = "Name is required"
+			check = false;
+		}
+		if (!mobile) { 
+			error1['mobile'] = "Mobile is required";
+			check = false;
+		}
+		if (!schoolName){
+			error1['schoolName'] = "School Name is required";
+			check = false;
+		}
+		// console.log(error);
+		setError(error1)
+
+		if (check) {
         postData(url, {email: email, name: name, message:msg, subject:subject})
           .then(data => {
             setName("");setMobile(""); setSchoolName("");
@@ -34,6 +54,24 @@ function ScholarshipProgram () {
             setError(error);
             console.log(error);
         })
+
+
+		var url1 = process.env.API_URL + "auth/contactsubscribers/";
+        postData(url1, {
+            email: "no email", mobile: mobile,
+            short_msg:`${name} from ${schoolName} applied for Scholarship Program`,
+            purpose:"scholarship",
+        }).then(data => {
+            // console.log(data);
+        }).catch(error => {
+            // setError(error);
+            // console.log(error);
+        })
+
+
+		}
+
+
     
     }
 
@@ -135,6 +173,7 @@ Please provide your name, mobile number, and school name, and submit this inform
 		</div>
 	</section>
 	
+	<p>{error?.name} {error?.mobile}</p>
 
 	<div id="scholarshipform" className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32">
 		<div className="flex flex-col justify-between">
@@ -144,7 +183,7 @@ Please provide your name, mobile number, and school name, and submit this inform
 			</div>
 			<img src="https://mambaui.com/assets/svg/doodle.svg" alt="Contact our customer support" className="p-6 h-52 md:h-64" />
 		</div>
-		<form novalidate="" className="space-y-6">
+		<form novalidate="" className="space-y-8">
 			<div>
 				<label for="name" className="text-sm">Full name</label>
 
@@ -153,7 +192,8 @@ Please provide your name, mobile number, and school name, and submit this inform
 {error.name && <label className="label">
     <span className="label-text-alt text-error">{error.name}</span>
   </label> 
-}			</div>
+}	
+		</div>
 			
 
             <div>

@@ -91,11 +91,16 @@ function ContactPage() {
               </div>
             </div>
 
+            <br />
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.141237962605!2d72.85877647402981!3d19.36303618190148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7955fc5b6f45d%3A0x9fe0324917bbbc9e!2sCoding%20Chaska%20(Computer%20Classes)!5e0!3m2!1sen!2sin!4v1696424627632!5m2!1sen!2sin" width="400" height="300" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <br />
 
 
         </div>
 
-        <div className="md:w-2/3 prose max-w-none">
+        <div className="md:w-2/3 md:pl-10 prose max-w-none">
 
         <h2>Feel free to fill out the form below. We look forward to hearing from you</h2>
 <form>
