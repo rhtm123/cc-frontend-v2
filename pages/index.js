@@ -65,7 +65,7 @@ export default function Home() {
       <h1 className="text-5xl font-bold">Write Code Online</h1>
       <p className="py-6">We have built our Online Editor where you can code without installing anything. Just register and start coding. Your works will be saved in your account.</p>
 
-     <a rel="noreferrer" target="_blank" href="http://www.codingchaskalab.com/write-code-online"><button className="btn btn-primary">Start Now</button></a>
+     <a rel="noreferrer" target="_blank" href="http://www.codingchaskalab.com"><button className="btn btn-primary">Start Now</button></a>
     </div>
   </div>
 </div>

@@ -46,7 +46,7 @@ React.useEffect(() => {
               <a rel="noreferrer" target='_blank' href="http://www.codingchaskalab.com/coding-problems"><span className="menu-text">Coding Problems</span></a>
             </li> 
             <li>
-                <a rel="noreferrer" target='_blank' href="http://www.codingchaskalab.com/write-code-online"><span className="menu-text">Write Code Online</span></a>
+                <a rel="noreferrer" target='_blank' href="http://www.codingchaskalab.com/"><span className="menu-text">Write Code Online</span></a>
             </li> 
 
           </ul>
@@ -77,7 +77,7 @@ React.useEffect(() => {
                 <a rel="noreferrer" target='_blank' href="http://www.codingchaskalab.com/coding-problems"><span className="menu-text">Coding Problems</span></a>
             </li> 
             <li>
-                <a rel="noreferrer" target='_blank' href="http://www.codingchaskalab.com/write-code-online"><span className="menu-text">Write Code Online</span></a>
+                <a rel="noreferrer" target='_blank' href="http://www.codingchaskalab.com"><span className="menu-text">Write Code Online</span></a>
             </li> 
 
           </ul>

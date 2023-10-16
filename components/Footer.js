@@ -42,7 +42,7 @@ Join us at our brand new institute in Naigaon East, Mumbai, where you can experi
     
     <Link className="link link-hover"  href="/programs">Our Programs</Link>
     <a className="link link-hover" rel="noreferrer" target='_blank' href="http://www.codingchaskalab.com/coding-problems">Coding Problems</a> 
-    <a className="link link-hover"  rel="noreferrer" target='_blank' href="http://www.codingchaskalab.com/write-code-online">Write Code Online</a> 
+    <a className="link link-hover"  rel="noreferrer" target='_blank' href="http://www.codingchaskalab.com">Write Code Online</a> 
     <Link className="link link-hover"  href={"/self-paced-courses"}>Self Paced Courses</Link> 
     <Link className="link link-hover" href={"/live-courses"}>Live Courses</Link> 
     <Link className="link link-hover" href="/quizzes">Solve MCQs</Link>
