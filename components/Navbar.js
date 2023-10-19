@@ -3,10 +3,15 @@ import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+import { useSession, signIn, signOut } from "next-auth/react";
+
+
 
 
 function Navbar() {
   const { theme, setTheme } = useTheme();
+  const { data: session } = useSession()
+
   
   const router = useRouter();
 
@@ -17,6 +22,13 @@ React.useEffect(() => {
   });
 
 }, [router.asPath]);
+
+  const handleLogout = async () => {
+    await signOut(); // Sign the user out
+
+    // Redirect to another page after logout (e.g., the home page)
+    window.location.href = '/'; // You can replace '/' with the desired URL
+  };
 
 
     return ( 
@@ -83,7 +95,35 @@ React.useEffect(() => {
           </ul>
         </details>
       </li>
-      <li><Link href="/about">About</Link></li>
+
+
+    {!session && <li><Link href="/login">Login</Link></li> }
+
+      {session && 
+        <li tabIndex={1}>
+        <details>
+          <summary>{session.user?.name.split(" ")[0]}</summary>
+          <ul className="p-2 z-30 bg-base-200">
+            <li><Link href="/profile">Profile</Link></li>
+            <li><button onClick={() => handleLogout() }>Logout</button></li>
+
+            
+            {/* <li><Link href="/self-paced-courses">Self Paced Courses</Link></li>
+            <li><Link href="/quizzes">Solve MCQs</Link></li>
+
+            <li><Link href="/quick-tutorials">Quick Tutorials</Link></li>
+
+            <li>
+                <a rel="noreferrer" target='_blank' href="http://www.codingchaskalab.com/coding-problems"><span className="menu-text">Coding Problems</span></a>
+            </li> 
+            <li>
+                <a rel="noreferrer" target='_blank' href="http://www.codingchaskalab.com"><span className="menu-text">Write Code Online</span></a>
+            </li>  */}
+
+          </ul>
+        </details>
+      </li>
+      }
     </ul>
 
     <select className="select select-sm" value={theme} onChange={e => setTheme(e.target.value)}>

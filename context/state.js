@@ -38,6 +38,7 @@ export default function AppWrapper({ children }) {
     //   }, 120000);
   
     // },[session]);
+    
     let url4 = process.env.API_URL + `short-tutorial/short-tuts/?ordering=-created&is_published=true`;
     let url5 = process.env.API_URL + `course/course_list/?is_published=&course_type=self-paced`;
     

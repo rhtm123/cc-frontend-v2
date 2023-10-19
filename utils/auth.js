@@ -37,8 +37,8 @@ function postData_(url='',data={},token='',method='POST',content_type='json'){
         cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
         credentials: "same-origin", // include, *same-origin, omit
         headers: headers,
-        redirect: "follow", // manual, *follow, error
-        referrer: "no-referrer", // no-referrer, *client
+        // redirect: "follow", // manual, *follow, error
+        // referrer: "no-referrer", // no-referrer, *client
         body: data, // body data type must match "Content-Type" header
     })
      .then(async (response) => {
