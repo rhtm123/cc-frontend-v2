@@ -4,6 +4,8 @@ import QuickTutorialCard from "@/components/QuickTutorialCard";
 import Link from "next/link";
 import Head from "next/head";
 
+
+
 function QuickTutorialsPage() {
     // console.log(process.env)
     const mycontext = useAppContext();
@@ -53,7 +55,7 @@ function QuickTutorialsPage() {
       
         <div className="container max-w-none">
 
-          
+      
 
 <div className="text-sm breadcrumbs">
   <ul>
@@ -65,13 +67,21 @@ function QuickTutorialsPage() {
     </li> 
    
     <li>
-      About
+      Quick Tutorials
     </li>
   </ul>
 </div>
 
 <br />
+
+{tutorials.length==0 && 
+<span className="loading loading-dots loading-sm"></span>
+}
+
 <div className="grid gap-4 grid-cols-1 md:grid-cols-3">
+
+
+
   
 {tutorials.map((tutorial, index) => (
                     <QuickTutorialCard key={index} tutorial={tutorial} />

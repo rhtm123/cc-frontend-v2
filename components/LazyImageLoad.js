@@ -15,7 +15,7 @@ const LazyImageLoad = ({src, blurhash, alt_name}) => {
         <Blurhash 
         style={{"display": isloaded?"none":"block"}}
             hash={blurhash}
-            width={"100%"}
+            width={1000}
             resolutionX={32}
             resolutionY={32}
             />

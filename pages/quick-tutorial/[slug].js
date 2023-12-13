@@ -34,7 +34,7 @@ function QuickTutorialPage({data, error}) {
 
       </Head>
 
-      <div className="container">
+      <div className="container max-w-none">
 
 <div className="text-sm breadcrumbs">
   <ul>
@@ -57,7 +57,7 @@ function QuickTutorialPage({data, error}) {
 </div>
 
 <br />
-<article className="md:w-3/4 prose max-w-none m-auto">
+<article className="md:w-2/4 prose max-w-none m-auto">
 
 
     <img 

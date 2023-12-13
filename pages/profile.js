@@ -14,7 +14,7 @@ function Profile(){
       </Head> 
 
       <div className="container max-w-none">
-      <div className="text-sm breadcrumbs">
+        <div className="text-sm breadcrumbs">
         <ul>
             <li>
             <Link href={"/"}>
@@ -29,10 +29,25 @@ function Profile(){
         </ul>
         </div>
 
+        <div className="prose my-4">
 
-        <div className="my-10">
-            <p>We are working on this page..</p>
+            <h2>Joined Live Courses</h2>
+            <div className=" grid gap-4 grid-cols-1 md:grid-cols-6">
+
+                
+
+                </div>
+
+
+
+
+            <h2>Joined Self-Paced Courses</h2>
+
+
         </div>
+
+       
+
 
 
 

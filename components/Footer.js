@@ -3,9 +3,9 @@ function Footer() {
     return ( 
     
     <div>
-        <footer className="grid gap-4 grid-cols-1 md:grid-cols-4 footer p-10 bg-base-200 text-base-content">
+  <footer className="grid gap-4 grid-cols-1 md:grid-cols-4 footer p-10 bg-base-200 text-base-content">
   <div className="col-span-2">
-  <span>Proudly Made by Bhartiya <img className="inline" width={'20px'} src='/images/india-flag-icon.png' /></span> 
+  <span>Proudly Made by Indians <img className="inline" width={'20px'} src='/images/india-flag-icon.png' /></span> 
 
   <h2 className="text-xl footer-widget-title">Coding Chaska</h2>
 
@@ -20,8 +20,8 @@ function Footer() {
   </h2>
 
   <h3>
-Join us at our brand new institute in Naigaon East, Mumbai, where you can experience the advantages of in-person learning. We are the first Coding and Computer Class in Naigaon East. Come visit our center and unlock the benefits of face-to-face classroom sessions.
-</h3>
+  Join us at our brand new institute in Naigaon East, Mumbai, where you can experience the advantages of in-person learning. We are the first Coding and Computer Class in Naigaon East. Come visit our center and unlock the benefits of face-to-face classroom sessions.
+  </h3>
 
   
     <div className="mt-4 grid grid-flow-col gap-4">
