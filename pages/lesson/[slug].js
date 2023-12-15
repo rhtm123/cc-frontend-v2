@@ -108,11 +108,14 @@ function LessonPage({data, error}) {
         <div className="md:flex md:gap-6">
         <div className="md:w-1/3">
         <ul className="hidden md:block menu bg-base-200 rounded-box">
+    
     {topics.map((topic, index) => 
     
-    <li>
-        <details open={topic.id==data.topic.id?true:false}>
-        <summary>{topic.name}</summary>
+    <li key={index} className="w-full">
+        {/* <p>{topic.id} {data.topic.id}</p> */}
+        
+        <details className="w-full" open={topic.id==data.topic.id?true:false}>
+        <summary className="w-full">{topic.name}</summary>
         
         <Lessons topic={topic} currentLesson={data} />
         </details>

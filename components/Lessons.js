@@ -32,7 +32,10 @@ function Lessons({topic, currentLesson}) {
     return ( 
         <ul>
             {lessons.map((lesson, index) => (
-                <li key={index}><Link className={lesson.id===currentLesson?.id?"active":""} href={"/lesson/"+lesson.slug}>{lesson.name}</Link></li>
+                <li style={{width:"100%"}} key={index}>
+                  <Link style={{width:"100%",overflow:"hidden"}} className={lesson.id===currentLesson?.id?"active":""} href={"/lesson/"+lesson.slug}>{lesson.name}
+                  </Link>
+                </li>
             ))}        
             
         </ul>

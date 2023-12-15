@@ -18,10 +18,10 @@ export function UserProvider({ children }) {
           postData(url, {"email":session.user.email})
             .then(data => {
               setUser(data);
-              console.log(data);
+              // console.log(data);
             //   setUserLoading(true);
             }).catch(error => {
-              console.log(error);
+              // console.log(error);
             //   setUserLoading(true)
           })
         } else {
