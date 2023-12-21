@@ -67,6 +67,7 @@ function CoursePage({data,error}) {
 
 <div className="tabs tabs-boxed">
   <a onClick={()=>setActiveTab("content")} className={activeTab=="content"?"tab tab-active":"tab"}>Content</a> 
+  <a onClick={()=>setActiveTab("overview")} className={activeTab=="overview"?"tab tab-active":"tab"}>Overview</a> 
   <a onClick={()=>setActiveTab("resources")} className={activeTab=="resources"?"tab tab-active":"tab"}>Resources</a> 
 </div>
 
@@ -94,6 +95,14 @@ function CoursePage({data,error}) {
     <br />
     <article className=" prose max-w-none">
     <div dangerouslySetInnerHTML={{ __html: data.materials }}></div>
+
+    </article>
+</div>}
+
+{activeTab=="overview" && <div>
+    <br />
+    <article className=" prose max-w-none">
+    <div dangerouslySetInnerHTML={{ __html: data.overview }}></div>
 
     </article>
 </div>}
