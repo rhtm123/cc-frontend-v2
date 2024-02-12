@@ -10,7 +10,7 @@ function Program({program}) {
 
           {/* <img src={program.image} alt={program.name} /> */}
           </figure>
-        <div className="card-body">
+        <div className="card-body p-4">
           <h3 className="card-title">{program.name}</h3>
           <div className="card-actions justify-start">
             <Link href={"/program/"+program.slug}><button className="btn btn-primary">Join Now</button></Link>

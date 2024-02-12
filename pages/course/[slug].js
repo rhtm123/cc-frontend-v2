@@ -39,7 +39,7 @@ function CoursePage({data,error}) {
         <meta name="robots" content="noindex" />
 
       </Head>
-        <div className="container max-w-none">
+        <div className="px-8 max-w-none">
 
 <div className="text-sm breadcrumbs">
   <ul>

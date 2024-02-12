@@ -9,7 +9,7 @@ function QuickTutorialCard({tutorial}) {
   <LazyImageLoad src={tutorial.feature_img} blurhash={blurhash} alt={tutorial.header}   />
 
     </figure>
-  <div className="card-body">
+  <div className="card-body p-4">
     <h3 className="card-title">{tutorial.header}</h3>
     <div className="card-actions justify-end">
       <Link href={"/quick-tutorial/"+tutorial.slug}><button className="btn">Read</button></Link>
