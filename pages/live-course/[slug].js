@@ -32,7 +32,7 @@ function LiveCoursePage({data, error}) {
 
           </Head>
 
-        <div className="px-8">
+        <div className="container max-w-none">
 <div className="text-sm breadcrumbs">
   <ul>
     <li>
