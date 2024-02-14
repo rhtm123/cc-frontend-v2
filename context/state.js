@@ -40,11 +40,11 @@ export default function AppWrapper({ children }) {
     // },[session]);
     
     let url4 = process.env.API_URL + `short-tutorial/short-tuts/?ordering=-created&is_published=true`;
-    let url5 = process.env.API_URL + `course/course_list/?is_published=&course_type=self-paced`;
+    let url5 = process.env.API_URL + `course/course_list/?is_published=&course_type=self-paced&ordering=-updated`;
     
     const {data:programs} = useSWR(process.env.API_URL+'course/programs/?is_published=true', fetcher);
     const {data:events, error1} = useSWR(process.env.API_URL+"event/events/", fetcher);
-    const {data:livecourses, error} = useSWR(process.env.API_URL + `course/course_list/?is_published=true&course_type=live`, fetcher);
+    const {data:livecourses, error} = useSWR(process.env.API_URL + `course/course_list/?is_published=true&course_type=live&ordering=-updated`, fetcher);
 
 
     const {data:tutorials} = useSWR(url4, fetcher);
