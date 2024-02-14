@@ -67,9 +67,9 @@ function LiveCoursePage({data, error}) {
 
   <div className="flex flex-col	justify-center">
     <h1 className="text-4xl">{data.name}</h1>
-    <p className="pt-4 ">Offered by: <span className="font-bold opacity-80">Coding Chaska </span></p>
-    <p className="pt-2 ">Course type: <span className="font-bold opacity-80">{data.course_type} </span></p>
-    <p className="pt-2 ">Difficulty level: <span className="font-bold opacity-80">{data.difficult_level} </span></p>
+    <p className="pt-2 ">Offered by: <span className="font-medium opacity-80">Coding Chaska </span></p>
+    <p className="pt-0 ">Course type: <span className="font-medium opacity-80">{data.course_type} </span></p>
+    <p className="pt-0 ">Difficulty level: <span className="font-medium opacity-80">{data.difficult_level} </span></p>
     
 
 
