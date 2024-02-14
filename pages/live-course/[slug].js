@@ -59,9 +59,8 @@ function LiveCoursePage({data, error}) {
   </ul>
 </div>
 
-<br />
 
-<div class="grid md:grid-cols-2 gap-4 pb-4">
+<div class="grid md:grid-cols-2 gap-4 py-4">
   <div>
   <img src={data.image} className="rounded-lg" />
   </div>
