@@ -112,7 +112,7 @@ export default function Home() {
             >
               <span className="flex">
                 
-                <SiGoogleclassroom className="text-secondary" size={36} />
+                <SiGoogleclassroom className="text-secondary" size={48} />
 
                 <span className="grow ms-6">
                   <span className="text-secondary block text-lg font-semibold">
