@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { ScholarshipNav } from "./BannerNav";
+import WhatsApp from "./WhatsApp";
 
 function Layout({children}) {
     let router = useRouter();
@@ -38,11 +39,14 @@ function Layout({children}) {
     
             {!router.pathname.includes("scholarship") &&       <ScholarshipNav />}
             <Navbar />
+            <WhatsApp />
+
 
             <main className="w">{children}</main>
 
             <br />
             <br />
+
 
             <Footer />
 
