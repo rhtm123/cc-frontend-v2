@@ -89,6 +89,7 @@ export default function Home() {
             <button
               type="button"
               onClick={()=>setActiveTab("programs")}
+              onMouseEnter={()=>setActiveTab("programs")}
               className={"text-start hover:bg-primary p-4 md:p-5 rounded-xl " + (activeTab==="programs"? "border border-primary":"")}
             >
               <span className="flex">
@@ -97,7 +98,7 @@ export default function Home() {
                   <span className="text-secondary block text-lg font-semibold">
                     Job Ready Programs
                   </span>
-                  <span className="block mt-1 ">
+                  <span className="block mt-1 hover:text-base-200">
                   Avail the benefits of our Job-Ready Programs at a reasonable fee. Receive expert assistance from our experienced trainers and mentors
                   </span>
                 </span>
@@ -107,6 +108,8 @@ export default function Home() {
             <button
               type="button"
               onClick={()=>setActiveTab("live-courses")}
+              onMouseEnter={()=>setActiveTab("live-courses")}
+
               className={"text-start hover:bg-primary p-4 md:p-5 rounded-xl " + (activeTab==="live-courses"? "border border-primary":"")}
 
             >
@@ -118,7 +121,7 @@ export default function Home() {
                   <span className="text-secondary block text-lg font-semibold">
                     Live Courses
                   </span>
-                  <span className="block mt-1 ">
+                  <span className="block mt-1 hover:text-base-200">
                   Embark on your learning journey with our live courses, offering real-time instruction. Whether online or offline, we're here to guide you every step of the way.
                   </span>
                 </span>
@@ -128,6 +131,8 @@ export default function Home() {
             <button
               type="button"
               onClick={()=>setActiveTab("self-paced-courses")}
+              onMouseEnter={()=>setActiveTab("self-paced-courses")}
+
               className={"text-start hover:bg-primary p-4 md:p-5 rounded-xl " + (activeTab==="self-paced-courses"? "border border-primary":"")}
             >
               <span className="flex">
@@ -138,7 +143,7 @@ export default function Home() {
                   <span className="text-secondary block text-lg font-semibold">
                     Self Paced Courses
                   </span>
-                  <span className="block mt-1 ">
+                  <span className="block mt-1 hover:text-base-200">
 
                   Explore our self-paced online courses, packed with interactive modules, assignments, and mini-projects.                  </span>
                 </span>
