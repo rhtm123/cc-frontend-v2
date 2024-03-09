@@ -6,6 +6,8 @@ import { GoCodeReview } from "react-icons/go";
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
 
 import { SiGoogleclassroom } from "react-icons/si";
+import { FaStar } from "react-icons/fa";
+
 
 
 
@@ -325,15 +327,24 @@ export default function Home() {
   <div className="hero-content text-center">
     <div className="max-w-lg">
       <h1 className="text-4xl font-bold">We are highly rated on Google Reviews.</h1>
-      <br />
 
-      <div className='text-center'>
-      {/* <a href='https://www.google.com/search?q=coding+chaska'>
-      </a> */}
+      <div className='text-center flex items-center justify-center py-4'>
+      <FaStar className="text-yellow-500 mr-1" /> 
+      <FaStar className="text-yellow-500 mr-1" />
+      <FaStar className="text-yellow-500 mr-1" />
+      <FaStar className="text-yellow-500 mr-1" />
+      <FaStar className="text-yellow-500 mr-1" />
+ 
+      <span className="pl-2">
+      4.9/5 (100 Reviews)
+      </span>
 
-  </div>
 
-    <a rel="noreferrer" target="_blank" href="https://www.google.com/search?q=codingchaska"><button className="btn btn-secondary">Search on Google</button></a>
+      
+
+      </div>
+
+    <a rel="noreferrer" target="_blank" href="https://www.google.com/search?q=codingchaska"><button className="btn btn-secondary btn-outline">Search on Google</button></a>
     </div>
   </div>
 </div>
