@@ -7,17 +7,21 @@ function Quiz({quiz}) {
 
     return ( 
         <div className="card bg-base-100 shadow-xl">
+          <Link href={"/quiz/"+quiz.slug}>
         <figure>
         <LazyImageLoad src={quiz.image} blurhash={blurhash} alt={quiz.name}   />
 
           {/* <img src={quiz.image} alt={quiz.name} /> */}
           
           </figure>
+          </Link>
         <div className="card-body">
-          <h3 className="card-title">{quiz.name}</h3>
-          <div className="card-actions justify-start">
+        <Link href={"/quiz/"+quiz.slug}>
+          <h3 className="card-title text-primary">{quiz.name}</h3>
+          </Link>
+          {/* <div className="card-actions justify-start">
             <Link href={"/quiz/"+quiz.slug}><button className="btn btn-primary">Solve Quiz</button></Link>
-          </div>
+          </div> */}
         </div>
       </div>
 

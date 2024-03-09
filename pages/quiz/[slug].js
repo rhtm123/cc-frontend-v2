@@ -31,7 +31,7 @@ function QuizPage({data,error}) {
       </Head>
 
 
-        <div className="container">
+        <div className="container max-w-none">
         <div className="text-sm breadcrumbs">
   <ul>
     <li>
@@ -56,7 +56,7 @@ function QuizPage({data,error}) {
 <br />
 
 
-<div className="md:w-3/4 prose max-w-none m-auto">
+<div className="md:w-7/12 prose max-w-none m-auto">
       <SolveQuiz quiz={data} />
 </div>
 

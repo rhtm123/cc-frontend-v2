@@ -5,16 +5,18 @@ function Program({program}) {
 
     return ( 
         <div className="card bg-base-100 shadow-xl">
+          <Link href={"/program/"+program.slug}>
         <figure>
         <LazyImageLoad src={program.image} blurhash={blurhash} alt={program.name}   />
 
           {/* <img src={program.image} alt={program.name} /> */}
           </figure>
+          </Link>
         <div className="card-body p-4">
-          <h3 className="card-title">{program.name}</h3>
-          <div className="card-actions justify-start">
-            <Link href={"/program/"+program.slug}><button className="btn btn-primary">Join Now</button></Link>
-          </div>
+        <Link href={"/program/"+program.slug}>
+          <h3 className="card-title text-primary">{program.name}</h3>
+        </Link>
+         
         </div>
       </div> 
      );

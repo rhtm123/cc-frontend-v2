@@ -17,7 +17,7 @@ export default function Home() {
     <Head>
         <title>Home | Coding Chaska </title>
         <meta name="description" content="First Computer Classes in Naigaon East. Learn Website Development, Frontend Development, Backend Development, Data Science, Python JavaScript & App Development" />
-      </Head>
+    </Head>
 
     
     <div className="container max-w-none bg-base-100 py-8">

@@ -2,7 +2,7 @@ import React from 'react'
 import { Blurhash } from "react-blurhash";
 
 
-const LazyImageLoad = ({src, blurhash, alt_name}) => {
+const LazyImageLoad = ({src, blurhash, alt_name, hoverEffect=true}) => {
     const [isloaded, setIsloaded] = React.useState(false);
 
     const changeLoad = () => {
@@ -11,7 +11,7 @@ const LazyImageLoad = ({src, blurhash, alt_name}) => {
     
   return (
     <div className="image">
-        <img style={{"display": isloaded?"block":"none"}} onLoad={changeLoad} src={src} alt={alt_name} />
+        <img className= {hoverEffect?'hover:scale-110 transition-all duration-500':""} style={{"display": isloaded?"block":"none"}} onLoad={changeLoad} src={src} alt={alt_name} />
         <Blurhash 
         style={{"display": isloaded?"none":"block"}}
             hash={blurhash}
