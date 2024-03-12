@@ -80,13 +80,13 @@ function ContactPage() {
               
               <div class="grow">
                 <p class="mb-1 font-bold">
-                  Addresses
+                  Address
                 </p>
                 <p class="">
                   005/3, Jai Vijay Nagar Building
                 </p>
                 <p class="">
-                  Oppsite Seven Square School, Naigaon East, Mumbai
+                  Opposite Seven Square School, Naigaon East, Mumbai
                 </p>
               </div>
             </div>
