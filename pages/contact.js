@@ -56,7 +56,7 @@ function ContactPage() {
 <div className="md:flex md:gap-6">
         <div className="md:w-1/3">
 
-        <h1 className="text-2xl bold">Points of Contact</h1>
+        <h1 className="text-2xl bold">Point of Contact</h1>
 
         <br />
         <div class="">
