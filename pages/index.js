@@ -296,7 +296,7 @@ export default function Home() {
 
 <div className="hero min-h-screen">
   <div className="hero-content flex-col lg:flex-row-reverse">
-    <img src="/images/intro/coding_problem.png" className="max-w rounded-lg" />
+    <img  src="/images/intro/coding_problem.png" className="w-full rounded-lg" />
     <div>
       <h1 className="text-5xl font-bold">Quizzes & Coding Problems</h1>
 
@@ -310,9 +310,11 @@ export default function Home() {
   </div>
 </div>
 
+<br />
+
 <div className="hero card rounded-xl min-h-screen bg-base-200">
   <div className="hero-content flex-col lg:flex-row">
-    <img src="/images/intro/cc_editor.png" className="max-w-sm rounded-lg" />
+    <img src="/images/intro/cc_editor.png" className="w-full rounded-lg" />
     <div>
       <h1 className="text-5xl font-bold">Write Code Online</h1>
       <p className="py-6">We have built our Online Editor where you can code without installing anything. Just register and start coding. Your works will be saved in your account.</p>

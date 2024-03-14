@@ -15,7 +15,7 @@ function Quiz({quiz}) {
           
           </figure>
           </Link>
-        <div className="card-body">
+        <div className="card-body p-4">
         <Link href={"/quiz/"+quiz.slug}>
           <h3 className="card-title text-primary">{quiz.name}</h3>
           </Link>
