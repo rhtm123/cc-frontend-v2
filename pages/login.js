@@ -1,6 +1,8 @@
 import { getProviders, useSession, signIn, signOut, getSession } from "next-auth/react";
 import Head from "next/head";
 import Link from "next/link";
+import { FaGoogle } from "react-icons/fa";
+
 
 export default function Login({providers}) {
     const { data: session } = useSession();
@@ -39,7 +41,9 @@ export default function Login({providers}) {
         {Object.values(providers).map((provider) => (
             <div className="title" style={{ fontSize:16 }} key={provider.name}>
                 <button onClick={() => signIn(provider.id)} className="btn" role="button" style={{textTransform:"none"}}>
-                <img width="24px" style={{marginBottom:0, marginRight:5}} alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+
+                <FaGoogle size={24} className="text-blue-800" />
+
                 LOGIN WITH GOOGLE
                 </button>
             </div>
