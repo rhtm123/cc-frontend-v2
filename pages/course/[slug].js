@@ -3,6 +3,7 @@ import Link from "next/link";
 import Lessons from "@/components/Lessons";
 import Head from "next/head";
 import Error404 from "@/components/Error404";
+import Topic from "@/components/Topic";
 
 function CoursePage({data,error}) {
 
@@ -73,22 +74,15 @@ function CoursePage({data,error}) {
 
 {activeTab=="content" && <div>
     <br />
-    <ul className="menu bg-base-200 rounded-box">
+    <div className="menu bg-base-200 rounded-box">
     {topics.map((topic, index) => 
     
-    <li>
-        <details>
-        <summary>{topic.name}</summary>
-        
-        <Lessons topic={topic} />
-        </details>
-    </li>
-    
-    
-    
+    <Topic topic={topic} />
+
+  
     )}
     
-    </ul>
+    </div>
 </div>}
 
 {activeTab=="resources" && <div>

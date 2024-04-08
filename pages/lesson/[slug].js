@@ -3,36 +3,12 @@ import React from "react";
 import Error404 from "@/components/Error404";
 import Link from "next/link";
 
-import Lessons from "@/components/Lessons";
+// import Lessons from "@/components/Lessons";
 import SolveQuiz from "@/components/SolveQuiz";
 
 import Head from "next/head";
+import Topic from "@/components/Topic";
 
-function Topic({ topic, data}){
-
-  const [show, setShow] = React.useState(false);
-
-  React.useEffect(()=>{
-
-    setShow(topic.id==data.topic.id);
-  },[topic])
-
-  return (
-
-    <div key={topic.id} className="w-full">
-    
-    <label onClick={()=>setShow(!show)} for={topic.id} class="w-full flex justify-between items-center px-2 py-2 font-semibold cursor-pointer">
-            <span>Introduction to Tailwind CSS</span>
-            <span class="text-gray-500">{show?'-':'+'}</span>
-    </label>
-
-    {show && <div>
-      <Lessons topic={topic} currentLesson={data} />
-    </div>}
-
-</div>
-  )
-}
 
 function LessonPage({data, error}) {
 
@@ -137,7 +113,7 @@ function LessonPage({data, error}) {
     
     {topics.map((topic, index) => 
     
-      <Topic topic={topic} data={data} />
+      <Topic topic={topic} lesson={data} />
 
     )}
     
