@@ -8,6 +8,32 @@ import SolveQuiz from "@/components/SolveQuiz";
 
 import Head from "next/head";
 
+function Topic({ topic, data}){
+
+  const [show, setShow] = React.useState(false);
+
+  React.useEffect(()=>{
+
+    setShow(topic.id==data.topic.id);
+  },[topic])
+
+  return (
+
+    <div key={topic.id} className="w-full">
+    
+    <label onClick={()=>setShow(!show)} for={topic.id} class="w-full flex justify-between items-center px-2 py-2 font-semibold cursor-pointer">
+            <span>Introduction to Tailwind CSS</span>
+            <span class="text-gray-500">{show?'-':'+'}</span>
+    </label>
+
+    {show && <div>
+      <Lessons topic={topic} currentLesson={data} />
+    </div>}
+
+</div>
+  )
+}
+
 function LessonPage({data, error}) {
 
     const [course, setCourse] = React.useState({});
@@ -107,25 +133,15 @@ function LessonPage({data, error}) {
         
         <div className="md:flex md:gap-6">
         <div className="md:w-1/3">
-        <ul className="hidden md:block menu bg-base-200 rounded-box">
+        <div className="hidden md:block menu bg-base-200 rounded-box">
     
     {topics.map((topic, index) => 
     
-    <li key={index} className="w-full">
-        {/* <p>{topic.id} {data.topic.id}</p> */}
-        
-        <details className="w-full" open={topic.id==data.topic.id?true:false}>
-        <summary className="w-full">{topic.name}</summary>
-        
-        <Lessons topic={topic} currentLesson={data} />
-        </details>
-    </li>
-    
-    
-    
+      <Topic topic={topic} data={data} />
+
     )}
     
-    </ul>
+    </div>
         </div>
         <div className="md:w-2/3">
 

@@ -58,11 +58,11 @@ export default function Home() {
         
       </div>
       {/* End Col */}
-      <div className="relative ms-4">
+      <div className="relative md:ms-4">
         <img
           className="w-full rounded-md"
           src="https://images.unsplash.com/photo-1577375729152-4c8b5fcda381?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Image Description"
+          alt="Coding Class"
         />
         
         {/* End SVG*/}
@@ -168,7 +168,7 @@ export default function Home() {
                 <img
                   className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
                   src="https://images.unsplash.com/photo-1605629921711-2f6b00c6bbf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&h=1220&q=80"
-                  alt="Image Description"
+                  alt="Coding Chaska Program"
                 />
                 </Link>
               </div>
@@ -186,7 +186,7 @@ export default function Home() {
                 <img
                   className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
                   src="https://images.unsplash.com/photo-1665686306574-1ace09918530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&h=1220&q=80"
-                  alt="Image Description"
+                  alt="Coding Chaska Live Course"
                 />
                 </Link>
               </div>
@@ -206,7 +206,7 @@ export default function Home() {
                 <img
                   className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
                   src="https://images.unsplash.com/photo-1598929213452-52d72f63e307?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&h=1220&q=80"
-                  alt="Image Description"
+                  alt="Coding Chaska Self Paced Courses"
                 />
                 </Link>
               </div>

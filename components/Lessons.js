@@ -30,15 +30,16 @@ function Lessons({topic, currentLesson}) {
       if (loading) return <span className="loading loading-dots loading-sm"></span>
 
     return ( 
-        <ul>
+        <div>
             {lessons.map((lesson, index) => (
-                <li style={{width:"100%"}} key={index}>
-                  <Link style={{width:"100%",overflow:"hidden"}} className={lesson.id===currentLesson?.id?"active":""} href={"/lesson/"+lesson.slug}>{lesson.name}
+                <div style={{width:"100%"}} key={index} className="px-4 py-1">
+                  <Link style={{width:"100%",overflow:"hidden"}} className={lesson.id===currentLesson?.id?"text-primary":""} href={"/lesson/"+lesson.slug}>
+                  <p>{lesson.name} </p>  
                   </Link>
-                </li>
+                </div>
             ))}        
             
-        </ul>
+        </div>
      );
 }
 export default Lessons;
