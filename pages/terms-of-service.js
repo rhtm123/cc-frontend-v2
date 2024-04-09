@@ -46,8 +46,8 @@ function TermsOfServicePage() {
 <h4>Rights & restrictions</h4>
 
 <ol>
-    <li>Members are granted a time-limited, non-exclusive, revocable, nontransferable, and non-sublicenseable right to access that portion of the online course corresponding to the purchase.</li>
-    <li>The portion of the online course corresponding to the purchase will be available to the Member as long as the course is maintained by the Company, which will be a minimum of one year after Member’ purchase.</li>
+    <li>Members are granted a time-limited, non-exclusive, revocable, nontransferable, and non-sublicenseable right to access that portion of the course corresponding to the purchase.</li>
+    <li>The portion of the course corresponding to the purchase will be available to the Member as long as the course is maintained by the Company, which will be a minimum of one year after Member’ purchase.</li>
     <li>The videos in the course are provided as a video stream and are not downloadable.</li>
     <li>By agreeing to grant such access, the Company does not obligate itself to maintain the course, or to maintain it in its present form.</li>
 </ol>
