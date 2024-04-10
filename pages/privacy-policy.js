@@ -10,7 +10,7 @@ function PrivacyPolicyPage() {
       </Head>
     
 
-        <div className="container">
+        <div className="container max-w-none">
         <div className="text-sm breadcrumbs">
   <ul>
     <li>
@@ -27,7 +27,7 @@ function PrivacyPolicyPage() {
 
 
 <br />
-<article className="md:w-3/4 prose max-w-none m-auto">
+<article className="md:w-2/4 prose max-w-none m-auto">
 
 
 <div className="content">

@@ -58,6 +58,10 @@ function Footer() {
     <span className="footer-title">Legal</span> 
     <Link className="link link-hover" href="/privacy-policy">Privacy policy</Link>
     <Link className="link link-hover" href="/terms-of-service">Terms of service</Link>
+    <Link className="link link-hover" href="/payment-and-refund-policy">Payment and refund Policy</Link>
+
+    <Link className="link link-hover" href="/student-code-of-conduct">Student code of conduct</Link>
+
   </div>
 
 </footer>
