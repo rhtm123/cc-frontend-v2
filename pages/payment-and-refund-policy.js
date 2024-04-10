@@ -43,10 +43,11 @@ function RefundPolicyPage() {
 
     <ol>
         <li>
-            <strong>Course Refunds</strong>:
-            <ul>
-                <li>Full refunds will be provided if a request for cancellation is made within <span class="font-semibold">5 days</span> of the course start date.</li>
-                <li>No refunds will be issued after the course starts.</li>
+            <strong>Course Refunds (One-time Payment)</strong>:
+            <ul>                
+                <li>Full refunds will be provided if a cancellation request is made before the course starts.</li>
+                <li>Partial refunds will be provided if a cancellation request is made within 5 days of the course start date.</li>
+                <li>No refunds will be issued after 5 days of course start date.</li>
                 <li>To request a refund, please contact us at <span class="font-semibold">codingchaska.info@gmail.com</span> and provide your full name, email address, course name, and reason for the refund request.</li>
             </ul>
         </li>

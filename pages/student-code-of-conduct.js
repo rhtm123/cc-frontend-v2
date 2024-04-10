@@ -34,8 +34,8 @@ export default function CodeOfConduct(){
 
         <br />
 
-        <div class="md:w-2/4 prose max-w-none m-auto">
-    <h2 class="text-2xl font-bold mb-4">Student Code of Conduct</h2>
+        <div className="md:w-2/4 prose max-w-none m-auto">
+    <h2 className="text-2xl font-bold mb-4">Student Code of Conduct</h2>
 
     <ol>
         <li>
