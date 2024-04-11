@@ -41,88 +41,88 @@ export default function CodeOfConduct(){
         <li>
             <strong>Respect and Inclusivity:</strong>
             <ul>
-                <li>1.1. Treat all fellow students, instructors, and staff with respect, dignity, and professionalism.</li>
-                <li>1.2. Foster an inclusive environment that values and celebrates diversity in all its forms, including but not limited to race, ethnicity, gender, age, religion, and disability.</li>
-                <li>1.3. Avoid engaging in any form of discrimination, harassment, or bullying.</li>
+                <li>Treat all fellow students, instructors, and staff with respect, dignity, and professionalism.</li>
+                <li>Foster an inclusive environment that values and celebrates diversity in all its forms, including but not limited to race, ethnicity, gender, age, religion, and disability.</li>
+                <li>Avoid engaging in any form of discrimination, harassment, or bullying.</li>
             </ul>
         </li>
 
         <li>
             <strong>Academic Integrity:</strong>
             <ul>
-                <li>2.1. Uphold the highest standards of academic integrity and honesty.</li>
-                <li>2.2. Refrain from plagiarism, cheating, or any form of academic misconduct.</li>
-                <li>2.3. Give credit to the original sources when using external materials or references.</li>
+                <li>Uphold the highest standards of academic integrity and honesty.</li>
+                <li>Refrain from plagiarism, cheating, or any form of academic misconduct.</li>
+                <li>Give credit to the original sources when using external materials or references.</li>
             </ul>
         </li>
 
         <li>
             <strong>Collaboration and Teamwork:</strong>
             <ul>
-                <li>3.1. Encourage collaboration and teamwork among peers.</li>
-                <li>3.2. Respect the contributions and ideas of others during group projects or assignments.</li>
-                <li>3.3. Strive to maintain open and effective communication within teams.</li>
+                <li>Encourage collaboration and teamwork among peers.</li>
+                <li>Respect the contributions and ideas of others during group projects or assignments.</li>
+                <li>Strive to maintain open and effective communication within teams.</li>
             </ul>
         </li>
 
         <li>
             <strong>Personal Responsibility:</strong>
             <ul>
-                <li>4.1. Attend classes regularly and be punctual.</li>
-                <li>4.2. Complete assignments and projects on time, meeting the required quality standards.</li>
-                <li>4.3. Take ownership of your learning and actively participate in class discussions and activities.</li>
+                <li>Attend classes regularly and be punctual. If you are unable to attend a scheduled class, inform us earlier.</li>
+                <li>Complete assignments and projects on time, meeting the required quality standards.</li>
+                <li>Take ownership of your learning and actively participate in class discussions and activities.</li>
             </ul>
         </li>
 
         <li>
             <strong>Professionalism:</strong>
             <ul>
-                <li>5.1. Dress appropriately and maintain a professional demeanor while attending classes or interacting with institute staff.</li>
-                <li>5.2. Use professional and respectful language in all forms of communication.</li>
-                <li>5.3. Adhere to the institute's policies and guidelines, including those related to technology usage and code of conduct.</li>
+                <li>Dress appropriately and maintain a professional demeanor while attending classes or interacting with institute staff.</li>
+                <li>Use professional and respectful language in all forms of communication.</li>
+                <li>Adhere to the institute's policies and guidelines, including those related to technology usage and code of conduct.</li>
             </ul>
         </li>
 
         <li>
             <strong>Confidentiality and Security:</strong>
             <ul>
-                <li>6.1. Respect the confidentiality of any sensitive information shared by fellow students, instructors, or staff.</li>
-                <li>6.2. Protect the security and privacy of the institute's systems, data, and resources.</li>
-                <li>6.3. Refrain from unauthorized access or distribution of confidential or proprietary information.</li>
+                <li>Respect the confidentiality of any sensitive information shared by fellow students, instructors, or staff.</li>
+                <li>Protect the security and privacy of the institute's systems, data, and resources.</li>
+                <li>Refrain from unauthorized access or distribution of confidential or proprietary information.</li>
             </ul>
         </li>
 
         <li>
             <strong>Learning Environment:</strong>
             <ul>
-                <li>7.1. Maintain a positive learning environment by actively participating in discussions, asking questions, and seeking clarification when needed.</li>
-                <li>7.2. Embrace a growth mindset, accepting and learning from constructive feedback provided by instructors or peers.</li>
-                <li>7.3. Use appropriate channels to address concerns, conflicts, or grievances, following the institute's established procedures.</li>
+                <li>Maintain a positive learning environment by actively participating in discussions, asking questions, and seeking clarification when needed.</li>
+                <li>Embrace a growth mindset, accepting and learning from constructive feedback provided by instructors or peers.</li>
+                <li>Use appropriate channels to address concerns, conflicts, or grievances, following the institute's established procedures.</li>
             </ul>
         </li>
 
         <li>
             <strong>Professional Development:</strong>
             <ul>
-                <li>8.1. Strive for continuous learning and professional development in the field of coding.</li>
-                <li>8.2. Stay updated with the latest industry trends, tools, and technologies.</li>
-                <li>8.3. Support and encourage the professional growth of your peers.</li>
+                <li>Strive for continuous learning and professional development in the field of coding.</li>
+                <li>Stay updated with the latest industry trends, tools, and technologies.</li>
+                <li>Support and encourage the professional growth of your peers.</li>
             </ul>
         </li>
 
         <li>
             <strong>Compliance with Laws and Regulations:</strong>
             <ul>
-                <li>9.1. Adhere to all applicable laws, regulations, and copyrights while using technology, software, or intellectual property.</li>
-                <li>9.2. Avoid engaging in any illegal activities or unethical practices.</li>
+                <li>Adhere to all applicable laws, regulations, and copyrights while using technology, software, or intellectual property.</li>
+                <li>Avoid engaging in any illegal activities or unethical practices.</li>
             </ul>
         </li>
 
         <li>
             <strong>Violations and Consequences:</strong>
             <ul>
-                <li>10.1. Violations of the code of conduct may result in disciplinary actions, which can include warnings, probation, suspension, or expulsion from the institute.</li>
-                <li>10.2. The severity of the violation and its impact on the institute's community will be taken into account when determining the appropriate consequences.</li>
+                <li>Violations of the code of conduct may result in disciplinary actions, which can include warnings, probation, suspension, or expulsion from the institute.</li>
+                <li>The severity of the violation and its impact on the institute's community will be taken into account when determining the appropriate consequences.</li>
             </ul>
         </li>
     </ol>
