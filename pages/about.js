@@ -9,7 +9,7 @@ function AboutPage() {
 
     return (
         <>
-        <div className="container">
+        <div className="container max-w-none">
             {/* breadcrumbs */}
 
             <div className="text-sm breadcrumbs">
@@ -30,7 +30,7 @@ function AboutPage() {
 <br />
 <br />
 
-<div className="md:w-3/4 prose max-w-none m-auto">
+<div className="md:w-2/4 prose max-w-none m-auto">
 
 <h1>1_ Coding Chaska's Vision</h1>
 <p>We envision Bharat becoming a Vishwa Guru. Our vision is to see skilled Indians leading the world and Bharat becoming an innovation hub. Our goal is to make a small contribution to that vision.</p>
