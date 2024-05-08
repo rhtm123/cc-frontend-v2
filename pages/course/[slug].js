@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Lessons from "@/components/Lessons";
+// import Lessons from "@/components/Lessons";
 import Head from "next/head";
 import Error404 from "@/components/Error404";
 import Topic from "@/components/Topic";
@@ -36,8 +36,22 @@ function CoursePage({data,error}) {
     return ( 
         <>
       <Head>
-        <title>{data.name} - Coding Chaska</title>
-        <meta name="robots" content="noindex" />
+        <title>{data.seo_title} | {data.institute?.name}, {data.institute?.branch}</title>
+
+
+        <meta name="description" content={data.seo_description} />
+        <meta name="image" content={data.image} />
+
+        {/* <!-- Schema.org for Google --> */}
+        <meta itemProp="name" content={data.name} />
+        <meta itemProp="description" content={data.seo_description} />
+        <meta itemProp="image" content={data.image} />
+
+        {/* Facebook  */}
+        <meta property="og:title"         content={data.name} />
+        <meta property="og:description"   content={data.seo_description} />
+        <meta property="og:image"         content={data.image} />
+
 
       </Head>
         <div className="px-8 max-w-none">

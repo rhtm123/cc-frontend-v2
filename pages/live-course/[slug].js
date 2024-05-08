@@ -20,19 +20,19 @@ function LiveCoursePage({data, error}) {
         <>
 
 <Head>
-          <title>{data.name} - Coding Chaska</title>
-        <meta name="description" content={data.overview.replace( /(<([^>]+)>)/ig, '').slice(0,120)} />
+        <title>{data.seo_title} | {data.institute?.name}, {data.institute?.branch}</title>
+        <meta name="description" content={data.seo_description} />
 
         <meta name="image" content={data.image} />
 
         {/* <!-- Schema.org for Google --> */}
 <meta itemProp="name" content={data.name} />
-<meta itemProp="description" content={data.overview.replace( /(<([^>]+)>)/ig, '').slice(0,120)} />
+<meta itemProp="description" content={data.seo_description} />
 <meta itemProp="image" content={data.image} />
 
         {/* Facebook  */}
         <meta property="og:title"         content={data.name} />
-        <meta property="og:description"   content={data.overview.replace( /(<([^>]+)>)/ig, '').slice(0,120)} />
+        <meta property="og:description"   content={data.seo_description} />
         <meta property="og:image"         content={data.image} />
 
 
@@ -67,12 +67,18 @@ function LiveCoursePage({data, error}) {
 
   <div className="flex flex-col	justify-center">
     <h1 className="text-4xl">{data.name}</h1>
-    <p className="pt-2 ">Offered by: <span className="font-medium opacity-80">Coding Chaska </span></p>
+    <p className="pt-2 ">Offered by: <span className="font-medium opacity-80">{data.institute?.name}, {data.institute?.branch}</span></p>
     <p className="pt-0 ">Course type: <span className="font-medium opacity-80">{data.course_type} </span></p>
     <p className="pt-0 ">Difficulty level: <span className="font-medium opacity-80">{data.difficult_level} </span></p>
+    <p className="pt-0 ">Location: <span className="font-medium opacity-80">
+      <a target="_blank" href={data.institute?.location?.google_map}>
+      {data.institute?.location?.google_map}
+      </a>
+      </span>
+      
+      </p>
+
     
-
-
   </div>
 
 </div>
