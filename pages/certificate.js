@@ -63,7 +63,7 @@ function CertificatePage() {
                             <span className="label-text">Write certificate id here: </span>
                         </label>
                         <input value={search} onChange={e=>setSearch(e.target.value)} type="text" placeholder="certi_id" name="name" className="input input-bordered input-info w-full max-w-xs" />
-                        <button type="button" onClick={handleClick} className="ml-4 btn btn-primary">Submit</button>
+                        <button type="button" onClick={handleClick} className="mt-2 md:mt-0 md:ml-4 btn btn-primary">Submit</button>
 
 
                     </div>
@@ -85,7 +85,7 @@ function CertificatePage() {
                         {certificate.program && <span>Program Name : {certificate.program.name}</span>}
                         <br />
                         <span>Type: {certificate.type}</span> <br />
-                        <span>Certificate image: <a rel="noreferrer" target="_blank" href={certificate.image}>Click</a></span>
+                        {/* <span>Certificate image: <a rel="noreferrer" target="_blank" href={certificate.image}>Click</a></span> */}
 
                         </p>
                         
