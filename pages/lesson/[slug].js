@@ -131,7 +131,7 @@ function LessonPage({data, error}) {
             }
 
             {!data.quiz && <div className="" >
-                        <h2 className="mt-0">{data.name}</h2>
+                        <h1 className="mt-0">{data.name}</h1>
 
                         <div  dangerouslySetInnerHTML={{ __html: data.detail }}></div>
             </div> }
