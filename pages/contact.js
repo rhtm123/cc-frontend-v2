@@ -69,7 +69,7 @@ function ContactPage() {
                   codingchaska.info@gmail.com
                 </p>
                 <p class="">
-                  +91 9518901902
+                  +91 9518-90-1902, +91 9370-39-4747
                 </p>
               </div>
             </div>
