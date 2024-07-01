@@ -1,5 +1,29 @@
 import Link from "next/link";
+import React from "react";
+
 function Footer() {
+
+
+  React.useEffect(() => {
+    // Function to create and append the script element
+    const loadScript = async () => {
+        const script = document.createElement('script');
+        script.src = 'https://thelearningsetu.com/static/js/gt.js'; // Replace with your script path
+        script.async = true; // Optional: Load script asynchronously (recommended)
+
+        document.body.appendChild(script);
+    };
+    // Load the script only once
+    loadScript();
+    
+
+    // Optional cleanup function to remove the script if needed
+    return () => {
+        // Code to remove the script (if applicable)
+    };
+}, []);
+
+
     return ( 
     
     <div>
@@ -68,7 +92,7 @@ function Footer() {
 
 <footer className="footer footer-center p-4 bg-base-300 text-base-content">
   <div>
-    <p>Copyright © 2022 - All right reserved by Learning Setu Private Ltd</p>
+    <p>Copyright © 2022 - All right reserved by Learning Setu Private Ltd | <span id="gt"></span></p>
   </div>
 </footer>
 </div>
