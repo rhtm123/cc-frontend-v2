@@ -91,16 +91,16 @@ function ScholarshipProgram () {
 		<div className="container max-w-none grid md:grid-cols-2 flex-col justify-center mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
 			<div className="flex flex-col justify-center p-6 text-center rounded-sm lg:text-left">
 				<h1 className="text-5xl font-bold sm:text-6xl">Coding Chaska's 
-					<span className="text-primary"> Scholarship</span> Program
+					<span className="text-primary"> Scholarship Program</span> 
 				</h1>
-				<p className="mt-6 mb-8 text-lg sm:mb-12">Excel in our scholarship and unlock the possibility of receiving a discount of up to 100% on our Computer Basics (Computer 101) Course.
+				<p className="mt-6 mb-8 text-lg sm:mb-12">Excel in our scholarship and unlock the possibility of receiving a discount of up to 100% on our Tech Chaska & Tech Starter Course.
 				</p>
 				<div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-					<a rel="noopener noreferrer" href="#scholarshipform" className="btn btn-primary">Apply Now</a>
+					<a rel="noopener noreferrer" href="#scholarshipform" data-aos="flip-right" className="btn btn-primary">Apply Now</a>
 				</div>
 			</div>
 			<div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-				<img src="/images/scholarship/rocket.png" alt="" className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 " />
+				<img src="/images/scholarship/rocket.png" alt="" className="object-contain rounded-lg h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 " />
 			</div>
 		</div>
 	</section>
@@ -110,7 +110,7 @@ function ScholarshipProgram () {
 	<section className="bg-base-200">
 		<div className="container max-w-none py-24 mx-auto space-y-12">
 			<div>
-                <p className="text-center dark:text-gray-400">HOW CAN YOU JOIN IT</p>
+                <p className="text-center opacity-80">HOW CAN YOU JOIN IT</p>
 				<h2 className="text-3xl font-bold tracki text-center sm:text-5xl ">Follow Simple Steps</h2>
 
 			</div>
@@ -179,7 +179,7 @@ Please provide your name, mobile number, and school name, and submit this inform
 		<div className="flex flex-col justify-between">
 			<div className="space-y-2">
 				<h2 className="text-4xl font-bold leadi lg:text-5xl">Fill up your form </h2>
-				<div className="dark:text-gray-400">Don't miss it</div>
+				<div className="opacity-80">Don't miss it</div>
 			</div>
 			<img src="https://mambaui.com/assets/svg/doodle.svg" alt="Contact our customer support" className="p-6 h-52 md:h-64" />
 		</div>
@@ -235,33 +235,33 @@ Please provide your name, mobile number, and school name, and submit this inform
 			<div className="grid gap-10 md:gap-8 sm:p-3 md:grid-cols-2 lg:px-12 xl:px-32">
 				<div>
 					<h3 className="font-semibold">Who qualifies for eligibility in this scholarship test?</h3>
-					<p className="mt-1 dark:text-gray-400">All school kids are eligible to participate in this test.</p>
+					<p className="mt-1 opacity-80">All school kids are eligible to participate in this test.</p>
 				</div>
 				<div>
 					<h3 className="font-semibold">How many times can I participate in the scholarship test?</h3>
-					<p className="mt-1 dark:text-gray-400">You may participate in the test only once per month.</p>
+					<p className="mt-1 opacity-80">You may participate in the test only once per month.</p>
 				</div>
 
                 
 				<div>
 					<h3 className="font-semibold">Can I participate from my home? </h3>
-					<p className="mt-1 dark:text-gray-400">No. You must come to Coding Chaska's institute to participate in the test.</p>
+					<p className="mt-1 opacity-80">No. You must come to Coding Chaska's institute to participate in the test.</p>
 				</div>
 
                 
 				<div>
 					<h3 className="font-semibold">What types of questions will be asked in the test?</h3>
-					<p className="mt-1 dark:text-gray-400">The test will consist of 15 questions covering topics in general aptitude and general knowledge</p>
+					<p className="mt-1 opacity-80">The test will consist of 15 questions covering topics in general aptitude and general knowledge</p>
 				</div>
 
                 <div>
 					<h3 className="font-semibold">Which course will I be eligible for discounts if I excel in the scholarship test? </h3>
-					<p className="mt-1 dark:text-gray-400">Your exceptional performance in the scholarship test can lead to discounts on select courses, including our Computer Basics (Computer 101) Course.</p>
+					<p className="mt-1 opacity-80">Your exceptional performance in the scholarship test can lead to discounts on select courses, including our Tech Chaska & Tech Starter Course.</p>
 				</div>
 
 				<div>
 					<h3 className="font-semibold">Can I use the Internet during the test? </h3>
-					<p className="mt-1 dark:text-gray-400">No, the use of the Internet is not permitted during the test.</p>
+					<p className="mt-1 opacity-80">No, the use of the Internet is not permitted during the test.</p>
 				</div>
 				
 			</div>

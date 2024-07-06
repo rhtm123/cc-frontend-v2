@@ -73,9 +73,9 @@ function ProgramPage({data, error}) {
 
 <br />
 
-<div className="tabs tab-lg	">
-  <a onClick={()=>setActiveTab("overview")} className={activeTab=="overview"?"tab tab-active tab-lifted":"tab tab-lifted"}>Overview</a> 
-  <a onClick={()=>setActiveTab("curriculam")} className={activeTab=="curriculam"?"tab tab-active tab-lifted":"tab tab-lifted"}>Curriculam</a> 
+<div className="tabs">
+  <button onClick={()=>setActiveTab("overview")} className={activeTab=="overview"?"tab font-bold tab-active tab-lifted":"tab tab-lifted"}>Overview</button> 
+  <button onClick={()=>setActiveTab("curriculam")} className={activeTab=="curriculam"?"tab font-bold tab-active tab-lifted":"tab tab-lifted"}>Curriculam</button> 
 </div>
 
 <div className="grid md:grid-cols-3 gap-4">
@@ -83,8 +83,7 @@ function ProgramPage({data, error}) {
 <div className="prose max-w-none m-auto">
 
 {activeTab=="overview" && 
-<div >
-    <br />
+<div className="py-4">
     <div  dangerouslySetInnerHTML={{ __html: data.detail }}></div>
 
 </div>
@@ -93,15 +92,13 @@ function ProgramPage({data, error}) {
 {activeTab=="curriculam" && 
 <div>
     {courses.map((course, index) =>
-
-<details className="mt-4 collapse collapse-plus bg-base-200">
+<details className="mt-6 collapse collapse-plus bg-base-200">
 <summary className="collapse-title font-medium">{course.course.name}</summary>
 <div className="collapse-content"> 
 <div  dangerouslySetInnerHTML={{ __html: course.course.content }}></div>
 
 </div>
 </details>
-    
 
 
     )}
@@ -127,7 +124,7 @@ function ProgramPage({data, error}) {
     <div className="card-actions">
 
       <JoinNow courseName={data.name} purpose="join_program" />
-      {/* <button className="btn btn-primary ">Join Now</button> */}
+      {/* <button data-aos="flip-right" className="btn btn-primary ">Join Now</button> */}
       
       <div className="footer pt-4 items-center">
     <p>Share the Program: </p>

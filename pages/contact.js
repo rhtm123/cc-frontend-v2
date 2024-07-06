@@ -153,7 +153,7 @@ function ContactPage() {
 </div>
 
 {!msgSent && <div className="text-center">
-    <button type="button" onClick={handleClick} className="btn btn-primary">Submit</button>
+    <button type="button" onClick={handleClick} data-aos="flip-right" className="btn btn-primary">Submit</button>
 </div>}
 
 </form>

@@ -21,60 +21,58 @@ export default function Home() {
         <meta name="description" content="First Computer Classes in Naigaon East. Learn Website Development, Frontend Development, Backend Development, Data Science, Python JavaScript & App Development" />
     </Head>
 
+    <div className="container max-w-none bg-base-100 py-8" data-aos="fade-up">
+
+{/* Grid */}
+<div className="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
+  <div>
+    <h1 className="block text-3xl font-bold sm:text-4xl lg:text-5xl lg:leading-tight">
+      Start your Coding journey with <span className="text-transparent
+      bg-gradient-to-r bg-clip-text from-primary to-secondary
+      animate-text">
+        Coding Chaska</span>
+    </h1>
+
+    {/* Buttons */}
+    <div className="mt-7 grid gap-3 w-full sm:inline-flex">
+      <Link
+        data-aos="flip-right" className="btn btn-outline btn-primary"
+        href="/programs"
+      >
+        Programs
+      </Link>
+      <Link
+        data-aos="flip-right" className="btn btn-outline btn-primary"
+        href="/live-courses"
+      >
+        Live Courses
+      </Link>
+      <Link
+        data-aos="flip-right" className="btn btn-outline btn-primary"
+        href="/self-paced-courses"
+      >
+        Self Paced Courses
+      </Link>
+    </div>
+    {/* End Buttons */}
     
-    <div className="container max-w-none bg-base-100 py-8">
-
-    {/* Grid */}
-    <div className="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
-      <div>
-        <h1 className="block text-3xl font-bold sm:text-4xl lg:text-5xl lg:leading-tight ">
-          Start your Coding journey with <span className="text-secondary">Coding Chaska</span>
-        </h1>
-
-        {/* Buttons */}
-        <div className="mt-7 grid gap-3 w-full sm:inline-flex">
-        <Link
-            className="btn btn-outline btn-primary"
-            href="/programs"
-          >
-            Programs
-          </Link>
-
-          <Link
-          className="btn btn-outline btn-primary"
-          href="/live-courses"
-          >
-            Live Courses
-            
-          </Link>
-          <Link
-            className="btn btn-outline btn-primary"
-            href="/self-paced-courses"
-          >
-            Self Paced Courses
-          </Link>
-        </div>
-        {/* End Buttons */}
-        
-      </div>
-      {/* End Col */}
-      <div className="relative md:ms-4">
-        <img
-          className="w-full rounded-md"
-          src="https://images.unsplash.com/photo-1577375729152-4c8b5fcda381?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Coding Class"
-        />
-        
-        {/* End SVG*/}
-      </div>
-      {/* End Col */}
-    </div>
-    {/* End Grid */}
-
-    </div>
+  </div>
+  {/* End Col */}
+  <div className="relative md:ms-4">
+    <img
+      className="w-full rounded-md"
+      src="https://images.unsplash.com/photo-1577375729152-4c8b5fcda381?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="Coding Class"
+    />
+    
+  </div>
+  {/* End Col */}
+</div>
+{/* End Grid */}
+</div>
 
 
-    <div className="container max-w-none py-8">
+    <div data-aos="fade-down" className="container max-w-none py-8">
 
     <div className="relative p-6 md:p-16">
       {/* Grid */}
@@ -260,41 +258,7 @@ export default function Home() {
   </div>
   {/* End Features */}
 
-
-
-
-
-
-<div className="container max-w-none">
- {/* <div className="hero min-h-screen">
-  <div className="hero-content flex-col lg:flex-row-reverse">
-    <img src="/images/about/about03/about-us-03-image-01.png" className="max-w-sm rounded-lg" />
-    <div>
-      <h1 className="text-5xl font-bold">Coding Chaska's Programs</h1>
-
-      <p className="py-6">Avail benefits of Job-Ready Programs at a reasonable free. Get expert assistance from our experienced trainers and mentors at every step in your journey. </p>
-     <Link href={"/programs"}><button className="btn btn-primary">Get Started</button></Link> 
-    </div>
-  </div>
-</div> */}
-
-
-{/* <div className="hero min-h-screen bg-base-200">
-  <div className="hero-content flex-col lg:flex-row">
-    <img src="/images/others/home-5-image-01.png" className="max-w-sm rounded-lg" />
-    <div>
-    
-      <h1 className="text-5xl font-bold">Coding Chaska's Courses</h1>
-      <p className="py-6">We have created self-paced online courses where you can advance your programming skills. These interactive courses contain a lot of problems, assignments & mini projects</p>
-
-      <Link href="/live-courses"><button className="btn btn-primary">Live Courses</button></Link>
-      <Link href="/self-paced-courses"><button className="ml-4 btn btn-primary">Self Paced Courses</button></Link>
-
-    </div>
-  </div>
-</div> */}
-
-<div className="hero min-h-screen">
+<div data-aos="fade-up" className="container max-w-none hero min-h-screen">
   <div className="hero-content flex-col lg:flex-row-reverse">
     <img  src="/images/intro/coding_problem.png" className="w-full rounded-lg" />
     <div>
@@ -303,8 +267,8 @@ export default function Home() {
 
       <p className="py-6">We have created coding problems that will help you to improve you programming logic. It contains all types of problems for a beginner to an advanced coder.</p>     
       
-    <Link href="quizzes"><button className="btn btn-primary btn-outline">Quizzes</button></Link>
-    <a target="_blank" href="http://www.codingchaskalab.com/coding-problems"> <button className="ml-4 btn btn-primary btn-outline">Coding Problems</button></a> 
+    <Link href="quizzes"><button data-aos="flip-right" className="btn btn-primary btn-outline">Quizzes</button></Link>
+    <a target="_blank" href="http://www.codingchaskalab.com/coding-problems"> <button data-aos="flip-right" className="ml-4 btn btn-primary btn-outline">Coding Problems</button></a> 
 
     </div>
   </div>
@@ -312,20 +276,20 @@ export default function Home() {
 
 <br />
 
-<div className="hero card rounded-xl min-h-screen bg-base-200">
+<div data-aos="fade-down" className="container max-w-none hero card rounded-xl min-h-screen bg-base-200">
   <div className="hero-content flex-col lg:flex-row">
     <img src="/images/intro/cc_editor.png" className="w-full rounded-lg" />
     <div>
       <h1 className="text-5xl font-bold">Write Code Online</h1>
       <p className="py-6">We have built our Online Editor where you can code without installing anything. Just register and start coding. Your works will be saved in your account.</p>
 
-     <a rel="noreferrer" target="_blank" href="http://www.codingchaskalab.com"><button className="btn btn-primary btn-outline">Start Now</button></a>
+     <a rel="noreferrer" target="_blank" href="http://www.codingchaskalab.com"><button data-aos="flip-right" className="btn btn-primary btn-outline">Start Now</button></a>
     </div>
   </div>
 </div>
 
 
-<div className="hero min-h-screen">
+<div data-aos="fade-up" className="container max-w-none hero min-h-screen">
   <div className="hero-content text-center">
     <div className="max-w-lg">
       <h1 className="text-4xl font-bold">We are highly rated on Google Reviews.</h1>
@@ -338,7 +302,7 @@ export default function Home() {
       <FaStar className="text-yellow-500 mr-1" />
  
       <span className="pl-2">
-      4.9/5 (100 Reviews)
+      5/5 (101 Reviews)
       </span>
 
 
@@ -346,12 +310,11 @@ export default function Home() {
 
       </div>
 
-    <a rel="noreferrer" target="_blank" href="https://www.google.com/search?q=codingchaska"><button className="btn btn-secondary btn-outline">Search on Google</button></a>
+    <a rel="noreferrer" target="_blank" href="https://www.google.com/search?q=codingchaska"><button data-aos="flip-right" className="btn btn-secondary btn-outline">Search on Google</button></a>
     </div>
   </div>
 </div>
 
-    </div>
     </>
     )
 }

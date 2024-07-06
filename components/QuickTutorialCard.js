@@ -4,7 +4,7 @@ function QuickTutorialCard({tutorial}) {
   let blurhash = "LBB4Ir}liwI:K6Nfn}xZ4T#Q%0o#"
 
     return ( 
-<div className="card bg-base-100 shadow-xl">
+<div data-aos="fade"  className="card bg-base-100 shadow-xl">
 <Link href={"/quick-tutorial/"+tutorial.slug}>
   <figure>
   <LazyImageLoad src={tutorial.feature_img} blurhash={blurhash} alt={tutorial.header}   />
@@ -16,7 +16,7 @@ function QuickTutorialCard({tutorial}) {
     <h3 className="card-title text-primary">{tutorial.header}</h3>
     </Link>
     {/* <div className="card-actions justify-end">
-      <Link href={"/quick-tutorial/"+tutorial.slug}><button className="btn">Read</button></Link>
+      <Link href={"/quick-tutorial/"+tutorial.slug}><button data-aos="flip-right" className="btn">Read</button></Link>
     </div> */}
   </div>
 </div>

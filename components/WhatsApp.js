@@ -9,7 +9,7 @@ const WhatsApp = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaWhatsappSquare className="text-green-600	" size={64} />
+        <FaWhatsappSquare className="zoom-in-zoom-out text-green-600	" size={64} />
         
        
       </a>

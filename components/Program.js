@@ -4,7 +4,7 @@ function Program({program}) {
   let blurhash = "LBB4Ir}liwI:K6Nfn}xZ4T#Q%0o#"
 
     return ( 
-        <div className="card bg-base-100 shadow-xl">
+        <div data-aos="fade" className="card bg-base-100 shadow-xl">
           <Link href={"/program/"+program.slug}>
         <figure>
         <LazyImageLoad src={program.image} blurhash={blurhash} alt={program.name}   />

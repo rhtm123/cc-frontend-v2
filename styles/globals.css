@@ -5,3 +5,35 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@keyframes text {
+    0%, 100% {
+      background-size: 200% 200%;
+      background-position: left center;
+    }
+    50% {
+      background-size: 200% 200%;
+      background-position: right center;
+    }
+  }
+  .animate-text {
+    animation: text 5s ease infinite;
+  }
+  
+
+.zoom-in-zoom-out {
+    animation: zoom-in-zoom-out 2s ease-out infinite;
+  }
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.2, 1.2);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }

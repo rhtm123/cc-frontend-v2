@@ -168,12 +168,12 @@ function SolveQuiz({quiz}) {
     
     <div class="card-actions flex justify-between	">
 
-    <div > {currentCount>0 && <button className="btn btn-primary" onClick={()=>handleNP('p')}>Previous</button>}</div>
+    <div > {currentCount>0 && <button data-aos="flip-right" className="btn btn-primary" onClick={()=>handleNP('p')}>Previous</button>}</div>
 
 <div> 
-          {currentCount<questions.length-1 ? <button className="btn btn-primary" onClick={()=>handleNP('n')}>Next</button>: <div>
+          {currentCount<questions.length-1 ? <button data-aos="flip-right" className="btn btn-primary" onClick={()=>handleNP('n')}>Next</button>: <div>
               
-              <button className="btn btn-primary" onClick={()=>handleSubmit()}>See the Result</button>
+              <button data-aos="flip-right" className="btn btn-primary" onClick={()=>handleSubmit()}>See the Result</button>
               </div>
 
            }
@@ -197,7 +197,7 @@ function SolveQuiz({quiz}) {
 
     <br />
 
-    <button onClick={()=>startNow()} className="btn btn-primary">
+    <button onClick={()=>startNow()} data-aos="flip-right" className="btn btn-primary">
           Start Quiz
     </button>
     

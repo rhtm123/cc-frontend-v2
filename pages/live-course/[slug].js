@@ -118,7 +118,7 @@ function LiveCoursePage({data, error}) {
     <div className="card-actions">
 
       <JoinNow courseName={data.name} purpose="join_course" />
-      {/* <button className="btn btn-primary ">Join Now</button> */}
+      {/* <button data-aos="flip-right" className="btn btn-primary ">Join Now</button> */}
       
     <div className="footer pt-4 items-center">
     <p>Share the course: </p>
