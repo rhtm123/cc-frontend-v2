@@ -20,7 +20,7 @@ function Quiz({quiz}) {
           <h3 className="card-title text-primary">{quiz.name}</h3>
           </Link>
           {/* <div className="card-actions justify-start">
-            <Link href={"/quiz/"+quiz.slug}><button data-aos="flip-right" className="btn btn-primary">Solve Quiz</button></Link>
+            <Link href={"/quiz/"+quiz.slug}><button data-aos="fade" className="btn btn-primary">Solve Quiz</button></Link>
           </div> */}
         </div>
       </div>

@@ -18,7 +18,7 @@ function Course({course}) {
     <h3 className="card-title text-primary">{course.name}</h3>
   </Link>
     {/* <div className="card-actions justify-start">
-      <Link href={"/course/"+course.slug}><button data-aos="flip-right" className="btn btn-primary">Join Now</button></Link>
+      <Link href={"/course/"+course.slug}><button data-aos="fade" className="btn btn-primary">Join Now</button></Link>
     </div> */}
   </div>
 </div>

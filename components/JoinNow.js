@@ -39,12 +39,12 @@ function JoinNow({courseName, purpose="join_course"}) {
     return ( 
         <>
 
-<button data-aos="flip-right" className="btn btn-md btn-secondary w-full" onClick={()=>window.my_modal_3.showModal()}>Request Demo Class</button>
+<button data-aos="fade" className="btn btn-md btn-secondary w-full" onClick={()=>window.my_modal_3.showModal()}>Request Demo Class</button>
 <dialog id="my_modal_3" className="modal">
   <div method="dialog" className="modal-box">
     
 <form method="dialog" className="model-box">
-<button data-aos="flip-right" className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+<button data-aos="fade" className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
 
 
 <div className="mb-4 form-control w-full">
@@ -83,7 +83,7 @@ function JoinNow({courseName, purpose="join_course"}) {
 </div>
 
 {!msgSent && <div className="text-center">
-    <button type="button" onClick={handleClick} data-aos="flip-right" className="btn btn-primary">Submit</button>
+    <button type="button" onClick={handleClick} data-aos="fade" className="btn btn-primary">Submit</button>
 </div>}
 
 </form>

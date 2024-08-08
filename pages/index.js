@@ -17,8 +17,8 @@ export default function Home() {
   return (
     <>
     <Head>
-        <title>Home | Coding Chaska </title>
-        <meta name="description" content="First Computer Classes in Naigaon East. Learn Website Development, Frontend Development, Backend Development, Data Science, Python JavaScript & App Development" />
+        <title>Home Page | Coding Chaska </title>
+        <meta name="description" content="Master computer skills and coding with live and self-paced courses, job-ready programs, and coding challenges." />
     </Head>
 
     <div className="container max-w-none bg-base-100 py-8" data-aos="fade-up">
@@ -36,19 +36,19 @@ export default function Home() {
     {/* Buttons */}
     <div className="mt-7 grid gap-3 w-full sm:inline-flex">
       <Link
-        data-aos="flip-right" className="btn btn-outline btn-primary"
+        data-aos="fade" className="btn btn-outline btn-primary"
         href="/programs"
       >
         Programs
       </Link>
       <Link
-        data-aos="flip-right" className="btn btn-outline btn-primary"
+        data-aos="fade" className="btn btn-outline btn-primary"
         href="/live-courses"
       >
         Live Courses
       </Link>
       <Link
-        data-aos="flip-right" className="btn btn-outline btn-primary"
+        data-aos="fade" className="btn btn-outline btn-primary"
         href="/self-paced-courses"
       >
         Self Paced Courses
@@ -62,7 +62,7 @@ export default function Home() {
     <img
       className="w-full rounded-md"
       src="/images/home/hero_new.avif"
-      alt="Coding Class"
+      alt="Computer Class in Naigaon"
     />
     
   </div>
@@ -74,7 +74,7 @@ export default function Home() {
 
     <div data-aos="fade-down" className="container max-w-none py-8">
 
-    <div className="relative p-6 md:p-16">
+    <div className="relative p-6 md:p-12">
       {/* Grid */}
       <div className="relative z-10 lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center">
         <div className="mb-10 lg:mb-0 lg:col-span-6">
@@ -100,7 +100,7 @@ export default function Home() {
                     Job Ready Programs
                   </span>
                   <span className="block mt-1 hover:text-base-200">
-                  Avail the benefits of our Job-Ready Programs at a reasonable fee. Receive expert assistance from our experienced trainers and mentors
+                    Unlock career success with our affordable Job-Ready Programs: Website Development, Frontend & Backend Development, App Development, and Data Science.
                   </span>
                 </span>
               </span>
@@ -123,7 +123,7 @@ export default function Home() {
                     Live Courses
                   </span>
                   <span className="block mt-1 hover:text-base-200">
-                  Embark on your learning journey with our live courses, offering real-time instruction. Whether online or offline, we're here to guide you every step of the way.
+                  Start your learning journey with our live courses: Python, C/C++, PHP, MySQL, Django, JavaScript, React, Next.js, Java, and more. Enroll today to advance your skills.
                   </span>
                 </span>
               </span>
@@ -145,8 +145,8 @@ export default function Home() {
                     Self Paced Courses
                   </span>
                   <span className="block mt-1 hover:text-base-200">
-
-                  Explore our self-paced online courses, packed with interactive modules, assignments, and mini-projects.                  </span>
+                  Discover our self-paced online courses, filled with interactive modules, assignments, and mini-projects: HTML/CSS, Python, Computer Basics, JavaScript & more.
+                  </span>
                 </span>
               </span>
             </button>
@@ -260,15 +260,15 @@ export default function Home() {
 
 <div data-aos="fade-up" className="container max-w-none hero min-h-screen">
   <div className="hero-content flex-col lg:flex-row-reverse">
-    <img  src="/images/intro/coding_problem.png" className="w-full rounded-lg" />
+    <img alt="Coding Chaska Coding Problems" src="/images/intro/coding_problem.png" className="w-full rounded-lg" />
     <div>
-      <h1 className="text-5xl font-bold">Quizzes & Coding Problems</h1>
+      <h2 className="text-5xl font-bold">Quizzes & Coding Problems</h2>
 
 
       <p className="py-6">We have created coding problems that will help you to improve you programming logic. It contains all types of problems for a beginner to an advanced coder.</p>     
       
-    <Link href="quizzes"><button data-aos="flip-right" className="btn btn-primary btn-outline">Quizzes</button></Link>
-    <a target="_blank" href="http://www.codingchaskalab.com/coding-problems"> <button data-aos="flip-right" className="ml-4 btn btn-primary btn-outline">Coding Problems</button></a> 
+    <Link href="quizzes"><button data-aos="fade" className="btn btn-primary btn-outline">Quizzes</button></Link>
+    <a target="_blank" href="http://www.codingchaskalab.com/coding-problems"> <button data-aos="fade" className="ml-4 btn btn-primary btn-outline">Coding Problems</button></a> 
 
     </div>
   </div>
@@ -278,12 +278,12 @@ export default function Home() {
 
 <div data-aos="fade-down" className="container max-w-none hero card rounded-xl min-h-screen bg-base-200">
   <div className="hero-content flex-col lg:flex-row">
-    <img src="/images/intro/cc_editor.png" className="w-full rounded-lg" />
+    <img alt="Coding Chaska Online Editor" src="/images/intro/cc_editor.png" className="w-full rounded-lg" />
     <div>
-      <h1 className="text-5xl font-bold">Write Code Online</h1>
+      <h2 className="text-5xl font-bold">Write Code Online</h2>
       <p className="py-6">We have built our Online Editor where you can code without installing anything. Just register and start coding. Your works will be saved in your account.</p>
 
-     <a rel="noreferrer" target="_blank" href="http://www.codingchaskalab.com"><button data-aos="flip-right" className="btn btn-primary btn-outline">Start Now</button></a>
+     <a rel="noreferrer" target="_blank" href="http://www.codingchaskalab.com"><button data-aos="fade" className="btn btn-primary btn-outline">Start Now</button></a>
     </div>
   </div>
 </div>
@@ -292,7 +292,7 @@ export default function Home() {
 <div data-aos="fade-up" className="container max-w-none hero min-h-screen">
   <div className="hero-content text-center">
     <div className="max-w-lg">
-      <h1 className="text-4xl font-bold">We are highly rated on Google Reviews.</h1>
+      <h3 className="text-4xl font-bold">We are highly rated on Google Reviews.</h3>
 
       <div className='text-center flex items-center justify-center py-4'>
       <FaStar className="text-yellow-500 mr-1" /> 
@@ -302,7 +302,7 @@ export default function Home() {
       <FaStar className="text-yellow-500 mr-1" />
  
       <span className="pl-2">
-      5/5 (101 Reviews)
+      5/5 (100+ Reviews)
       </span>
 
 
@@ -310,7 +310,10 @@ export default function Home() {
 
       </div>
 
-    <a rel="noreferrer" target="_blank" href="https://www.google.com/search?q=codingchaska"><button data-aos="flip-right" className="btn btn-secondary btn-outline">Search on Google</button></a>
+      <a rel="noreferrer" target="_blank" href="https://www.google.com/search?q=codingchaska"><button data-aos="fade" className="btn btn-secondary btn-outline">Search on Google</button></a>
+
+          
+
     </div>
   </div>
 </div>

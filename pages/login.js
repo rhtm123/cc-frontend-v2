@@ -40,7 +40,7 @@ export default function Login({providers}) {
         <div className="my-20 text-center">
         {Object.values(providers).map((provider) => (
             <div className="title" style={{ fontSize:16 }} key={provider.name}>
-                <button onClick={() => signIn(provider.id)} data-aos="flip-right" className="btn" role="button" style={{textTransform:"none"}}>
+                <button onClick={() => signIn(provider.id)} data-aos="fade" className="btn" role="button" style={{textTransform:"none"}}>
 
                 <FaGoogle size={24} className="text-blue-800" />
 

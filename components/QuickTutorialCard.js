@@ -16,7 +16,7 @@ function QuickTutorialCard({tutorial}) {
     <h3 className="card-title text-primary">{tutorial.header}</h3>
     </Link>
     {/* <div className="card-actions justify-end">
-      <Link href={"/quick-tutorial/"+tutorial.slug}><button data-aos="flip-right" className="btn">Read</button></Link>
+      <Link href={"/quick-tutorial/"+tutorial.slug}><button data-aos="fade" className="btn">Read</button></Link>
     </div> */}
   </div>
 </div>

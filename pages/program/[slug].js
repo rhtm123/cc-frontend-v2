@@ -124,7 +124,7 @@ function ProgramPage({data, error}) {
     <div className="card-actions">
 
       <JoinNow courseName={data.name} purpose="join_program" />
-      {/* <button data-aos="flip-right" className="btn btn-primary ">Join Now</button> */}
+      {/* <button data-aos="fade" className="btn btn-primary ">Join Now</button> */}
       
       <div className="footer pt-4 items-center">
     <p>Share the Program: </p>

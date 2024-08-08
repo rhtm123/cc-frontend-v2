@@ -39,7 +39,7 @@ React.useEffect(() => {
       
   <div className="navbar-start">
     <div className="dropdown">
-      <label tabIndex={0} data-aos="flip-right" className="btn btn-ghost lg:hidden">
+      <label tabIndex={0} data-aos="fade" className="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </label>
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
@@ -68,7 +68,7 @@ React.useEffect(() => {
       </ul>
     </div>
 
-    <Link href='/' data-aos="flip-right" className="btn btn-ghost normal-case text-xl">
+    <Link href='/' data-aos="fade" className="btn btn-ghost normal-case text-xl">
       <img width={"180px"} src="/images/logo/logo.png" alt="Coding Chaska Logo" />
     </Link>
   </div>
@@ -128,8 +128,8 @@ React.useEffect(() => {
 
     <select className="select select-sm" value={theme} onChange={e => setTheme(e.target.value)}>
       <option value="system">System</option>
-      <option value="forest">Dark</option>
-      <option value="cupcake">Light</option>
+      <option value="dark">Dark</option>
+      <option value="light">Light</option>
     </select>
   </div>
 </div>

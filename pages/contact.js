@@ -54,7 +54,7 @@ function ContactPage() {
 <br />
 
 <div className="md:flex md:gap-6">
-        <div className="md:w-1/3">
+        <div className="md:w-5/12">
 
         <h1 className="text-2xl bold">Point of Contact</h1>
 
@@ -83,24 +83,26 @@ function ContactPage() {
                   Address
                 </p>
                 <p class="">
-                  005/3, Jai Vijay Nagar Building
-                </p>
-                <p class="">
-                  Opposite Seven Square School, Naigaon East, Mumbai
+                005, Jay Vijay Nagar Building 3,
+                Opposite Seven Square Academy School, Naigaon East, Maharashtra
                 </p>
               </div>
             </div>
 
             <br />
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.141237962605!2d72.85877647402981!3d19.36303618190148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7955fc5b6f45d%3A0x9fe0324917bbbc9e!2sCoding%20Chaska%20(Computer%20Classes)!5e0!3m2!1sen!2sin!4v1696424627632!5m2!1sen!2sin" width="400" height="300" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div className="w-full border rounded-xl">
 
+
+            <iframe className="w-full rounded-xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.141237962605!2d72.85877647402981!3d19.36303618190148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7955fc5b6f45d%3A0x9fe0324917bbbc9e!2sCoding%20Chaska%20(Computer%20Classes)!5e0!3m2!1sen!2sin!4v1696424627632!5m2!1sen!2sin" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
             <br />
 
 
         </div>
 
-        <div className="md:w-2/3 md:pl-10 prose max-w-none">
+        <div className="md:w-7/12 md:pl-10 prose max-w-none">
 
         <h2>Feel free to fill out the form below. We look forward to hearing from you</h2>
 <form>
@@ -153,7 +155,7 @@ function ContactPage() {
 </div>
 
 {!msgSent && <div className="text-center">
-    <button type="button" onClick={handleClick} data-aos="flip-right" className="btn btn-primary">Submit</button>
+    <button type="button" onClick={handleClick} data-aos="fade" className="btn btn-primary">Submit</button>
 </div>}
 
 </form>

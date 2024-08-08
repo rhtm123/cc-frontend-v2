@@ -106,7 +106,7 @@ function CCEditorWrapperEmbed({project,embed=false}) {
 
 <a rel="noreferrer" target="_blank"
  href={"http://www.codingchaskalab.com/write-code-online/"+project.slug}>
-    <button style={{"margin-bottom":10}} data-aos="flip-right" className="btn btn-primary">Run this project</button></a>
+    <button style={{"margin-bottom":10}} data-aos="fade" className="btn btn-primary">Run this project</button></a>
 <div>
            
               <div>

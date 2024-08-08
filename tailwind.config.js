@@ -11,34 +11,38 @@ module.exports = {
   daisyui: {
     themes: [
       {
-        cupcake:{
-"primary": "#0048A4",    
-"secondary": "#E35A01",      
-"accent": "#E08955",      
-"neutral": "#1a1d23",          
-"base-100": "#e5ecf5",      
-"info": "#18c2ec",    
-"success": "#0c5f37",  
-"warning": "#ad840b",
-"error": "#ef3c25",
-"--rounded-btn": "2rem",
+        light:{
+          
+  ...require("daisyui/src/theming/themes")["[data-theme=cupcake]"],
+
+  "primary": "#0048A4",    
+  "secondary": "#F68C1F",      
+  "accent": "#FF6F61",      
+  "neutral": "#222831",          
+  "base-100": "#F9FAFB",
+  "base-200": "#E5E7EB", 
+  "base-300": "#CBD5E1",    
+  "info": "#18C2EC",    
+  "success": "#0C5F37",  
+  "warning": "#AD840B",
+  "error": "#EF3C25"
+  
         }
       },
       {
-        forest: {    
-"primary": "#0048A4",    
-"secondary": "#E35A01",      
-"accent": "#E08955",     
-"neutral": "#191b24",       
-"base-100": "#000e20",     
-"info": "#18c2ec",    
-"success": "#0c5f37",    
-"warning": "#ad840b",      
-"error": "#ef3c25",
-"--rounded-btn": "2rem",
-"--rounded-box": "2rem",
-"--tab-radius": "2rem",
-"--rounded-badge": "1.9rem",
+        dark: {  
+  ...require("daisyui/src/theming/themes")["[data-theme=forest]"],
+  "primary": "#0048A4",
+  "secondary": "#F68C1F",
+  "accent": "#FF6F61",
+  "neutral": "#1A202C",
+  "base-100": "#0D1117",
+  "base-200": "#1C1F26",
+  "base-300": "#2D3748",
+  "info": "#18C2EC",
+  "success": "#0C5F37",
+  "warning": "#AD840B",
+  "error": "#EF3C25"
 
         },
         
