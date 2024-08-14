@@ -29,8 +29,8 @@ function LiveCoursesPage() {
     return ( 
         <>
     <Head>
-        <title>Online Live Courses | Coding Chaska</title>
-        <meta name="description" content="Online live courses, Live Classes, Assignments & Projects - Python, HTML, CSS, JavaScript, Django, React, Java" />
+        <title>Live Tech Courses | Coding Chaska</title>
+        <meta name="description" content="Dive into interactive learning with our live online & Offline tech courses. Master Computer Basics, React, JavaScript, Python, Django, HTML & CSS. Join our live classes and accelerate your tech career." />
     </Head>
 
 <div className="container max-w-none">
@@ -49,7 +49,12 @@ function LiveCoursesPage() {
     </li>
   </ul>
 </div>
-<br />
+
+
+<div className="py-4">
+<h1 className="font-bold md:text-3xl text-xl">Learn Live with Our Tech Experts</h1>
+<p className="opacity-90">Engage in live, interactive sessions with experienced instructors. Gain hands-on practice, ask questions in real-time, and network with fellow learners. Accelerate your skill development and boost your tech career prospects with our comprehensive live tech courses.</p>
+</div>
 
 {loading && 
 <span className="loading loading-dots loading-sm"></span>

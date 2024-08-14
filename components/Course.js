@@ -5,7 +5,7 @@ import LazyImageLoad from "./LazyImageLoad";
 function Course({course}) {
   let blurhash = "LBB4Ir}liwI:K6Nfn}xZ4T#Q%0o#"
     return ( 
- <div data-aos="fade"  className="card bg-base-100 shadow-xl">
+ <div data-aos="fade"  className="card bg-base-100 shadow ">
   <Link href={"/course/"+course.slug}>
   <figure>
     <LazyImageLoad src={course.image} blurhash={blurhash} alt={course.name}   />

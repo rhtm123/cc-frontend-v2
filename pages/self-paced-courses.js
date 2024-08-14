@@ -27,7 +27,7 @@ function SelfPacedCoursesPage() {
         <>
       <Head>
         <title>Online Self Paced Courses | Coding Chaska</title>
-        <meta name="description" content="Online self paced courses - Python, HTML, CSS, JavaScript, Django, React, Java" />
+        <meta name="description" content="Master essential tech skills with our self-paced online courses. Learn Computer Basics, Python, JavaScript, HTML & CSS from anywhere, anytime. Start your tech journey today" />
       </Head>
 
         <div className="container max-w-none">
@@ -46,12 +46,18 @@ function SelfPacedCoursesPage() {
     </li>
   </ul>
 </div>
-<br />
+
+
+
+<div className="py-4">
+<h1 className="font-bold md:text-3xl text-xl">Elevate Your Tech Career with Our Self-Paced Courses</h1>
+<p className="opacity-90">Learn in-demand tech skills at your own convenience with our flexible online courses. Master Computer Basics, Python, JavaScript, HTML & CSS through self-paced learning. Enjoy the freedom to learn anytime, anywhere, and at your own pace. Build a strong foundation in technology without compromising your schedule.</p>
+</div>
+
 
 {loading && 
-<span className="loading loading-dots loading-sm"></span>
+<span className="loading loading-dots py-4 loading-sm"></span>
 }
-
 {(courses.length ===0 && !loading) &&
                 <div className='text-center'>
                   <p>There is no course available</p>
@@ -63,8 +69,8 @@ function SelfPacedCoursesPage() {
 
 <div className=" grid gap-4 grid-cols-1 md:grid-cols-3">
 
-{courses.map((course, index) => (
-                    <Course key={index} course={course}/>
+    {courses.map((course, index) => (
+      <Course key={index} course={course}/>
     ))}
 
 </div>
