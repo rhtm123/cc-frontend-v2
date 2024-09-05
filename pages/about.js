@@ -2,14 +2,17 @@ import Head from "next/head";
 import Link from "next/link";
 
 function AboutPage() {
+
   <Head>
-        <title>About | Coding Chaska </title>
-        <meta name="description" content="We create an atmosphere where everyone develops a Chaska in coding. Join our programs and get your dream job" />
+    <title>About Us | Coding Chaska - Empowering India's Tech Future</title>
+    <meta name="description" content="Discover Coding Chaska's vision for India's tech leadership. Join our family-oriented institute and develop your passion for coding. Transform your career and contribute to India's innovation hub." />
+    <meta name="keywords" content="Coding Chaska, IT training, tech education, India, innovation hub, coding passion" />
+    <link rel="canonical" href="https://codingchaska.com/about" />
   </Head>
 
     return (
         <>
-        <div className="container max-w-none">
+        <div className="px-4 max-w-none">
             {/* breadcrumbs */}
 
             <div className="text-sm breadcrumbs">

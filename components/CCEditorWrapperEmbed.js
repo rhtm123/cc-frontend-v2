@@ -98,9 +98,6 @@ function CCEditorWrapperEmbed({project,embed=false}) {
 //     }, 120000);
 
 //   },[session]);
-
-    
-    
     
     return (<activeFileContext.Provider value={{activeFile, setActiveFile}}>
 
