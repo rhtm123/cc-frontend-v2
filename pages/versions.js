@@ -25,7 +25,7 @@ const VersionHistory = () => {
   };
 
   useEffect(() => {
-    fetchVersions('https://thelearningsetu.com/api/v1/version/versions/?app_name=cc');
+    fetchVersions(process.env.API_URL + 'version/versions/?app_name=cc');
   }, []);
 
   const handleLoadMore = () => {
