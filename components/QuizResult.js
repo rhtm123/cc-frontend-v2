@@ -50,17 +50,12 @@ function QuizResult({ questions = [], total_correct, timeTaken, timeRequired }) 
     return (
         <div>
             <h3 style={{ textAlign: "center" }}>
-                Your Score: {percentage}% ({total_correct}/{questions.length})
+                Your Score: {percentage}% ({total_correct}/{questions.length}) | Time Taken: {Math.floor(timeTaken / 60)}:{timeTaken % 60 < 10 ? '0' : ''}{timeTaken % 60} minutes
             </h3>
-            {timeRequired > 0 && ( // Only show time taken if time is required
-                <h3 style={{ textAlign: "center", marginTop: "20px" }}>
-                    Time Taken: {Math.floor(timeTaken / 60)}:{timeTaken % 60 < 10 ? '0' : ''}{timeTaken % 60} minutes
-                </h3>
-            )}
-                <h4 style={{ textAlign: "center", marginTop: "20px" }}>{courseSuggestion}</h4>
+                {/* <h4 style={{ textAlign: "center", marginTop: "20px" }}>{courseSuggestion}</h4> */}
             <br />
             {questions.map((question, key) => (
-                <div key={key} className="card bg-base-100 shadow-lg mb-8">
+                <div key={key}  className={(question.right_option === question.selected?"card bg-base-200 mb-8 border border-success":"card bg-base-200 border border-error mb-8")}>
                     <div className="card-body">
                         {question.right_option === question.selected ? (
                             <h5 className="card-title success">{key + 1}. Right Answer</h5>
@@ -69,8 +64,8 @@ function QuizResult({ questions = [], total_correct, timeTaken, timeRequired }) 
                         )}
                         <div className="" dangerouslySetInnerHTML={{ __html: question.question ? question.question.text : question.text }} />
                         <Options question={question} questionID={question.question ? question.question.id : question.id} />
-                        <p className="">EXPLANATION</p>
-                        <div className="">{question.question ? question.question.answer_discription : question.answer_discription}</div>
+                        <p className="font-bold">EXPLANATION</p>
+                        <div className="" dangerouslySetInnerHTML={{__html: question.question ? question.question.answer_discription : question.answer_discription }} />
                         <br />
                     </div>
                 </div>

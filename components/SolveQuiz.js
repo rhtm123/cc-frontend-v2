@@ -197,16 +197,15 @@ function SolveQuiz({ quiz }) {
       {!showAnswer && (
         <div className="relative">
         {started && quiz.time_required > 0 && ( // Only show timer if time is required
-          <div className="absolute bg-gray-800 text-white top-0 right-0 p-2 rounded-bl-lg z-10">
+          <div className="absolute bg-error opacity-80 text-white top-0 right-0 p-2 px-4 rounded-bl-lg rounded-tr-lg z-10">
             <div>Time Remaining: {Math.floor(remainingTime / 60)}:{remainingTime % 60 < 10 ? '0' : ''}{remainingTime % 60}</div>
           </div>
         )}
           {started ? (
             <div>
-              <div class="card card-compact bg-base-100 shadow-xl">
+              <div class="card card-compact bg-base-200 shadow">
                 <div class="card-body">
                   <h2 class="card-title">
-                    {" "}
                     {currentCount + 1} of {questions.length}{" "}
                   </h2>
                   <div
@@ -243,16 +242,16 @@ function SolveQuiz({ quiz }) {
                     </div>
                   )}
 
+
                   <div class="card-actions flex justify-between	">
                     <div>
-                      {" "}
                       {currentCount > 0 && (
                         <button
-                          data-aos="fade"
+                          // data-aos="fade"
                           className="btn btn-primary"
                           onClick={() => handleNP("p")}
                         >
-                          Previous
+                          Previous 
                         </button>
                       )}
                     </div>
@@ -260,7 +259,7 @@ function SolveQuiz({ quiz }) {
                     <div>
                       {currentCount < questions.length - 1 ? (
                         <button
-                          data-aos="fade"
+                          // data-aos="fade"
                           className="btn btn-primary"
                           onClick={() => handleNP("n")}
                         >
@@ -269,7 +268,7 @@ function SolveQuiz({ quiz }) {
                       ) : (
                         <div>
                           <button
-                            data-aos="fade"
+                            // data-aos="fade"
                             className="btn btn-primary"
                             onClick={handleSubmit}
                             
@@ -300,7 +299,7 @@ function SolveQuiz({ quiz }) {
 
               <button
                 onClick={() => startNow()}
-                data-aos="fade"
+                // data-aos="fade"
                 className="btn btn-primary"
               >
                 Start Quiz
