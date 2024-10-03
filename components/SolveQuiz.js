@@ -17,12 +17,19 @@ function SolveQuiz({ quiz }) {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
   const [userDetails, setUserDetails] = React.useState(null);
 
+  // Timer state
+  const [timer, setTimer] = React.useState(0); // Total time in seconds
+  const [remainingTime, setRemainingTime] = React.useState(0); // Remaining time
+  const [timerInterval, setTimerInterval] = React.useState(null); // Timer interval
+
   const handleSubmit = () => {
     console.log("Allowed to:", quiz.allowed_to); // Debugging line
     if (quiz && quiz.allowed_to === 2) {
-      setIsModalOpen(true); // Open modal if allowed_to is 2
+      setIsModalOpen(true);
+      stopTimer(); // Open modal if allowed_to is 2
     } else {
       // Logic to show results directly
+      stopTimer();
       setShowAnswer(true);
     }
   };
@@ -30,13 +37,43 @@ function SolveQuiz({ quiz }) {
   const handleModalSubmit = (details) => {
     console.log("User Details:", details); // Debugging line
     // Logic to handle user details
+
     setShowAnswer(true);
   };
 
   const startNow = () => {
     setStarted(true);
+    if (quiz.time_required > 0) { // Check if time is required
+      setRemainingTime(quiz.time_required * 60); // Convert minutes to seconds
+      setTimer(quiz.time_required * 60); // Set total timer
+      startTimer(); // Start the timer
+    }
     // userQuizMapCreate();
   };
+
+  const startTimer = () => {
+    const interval = setInterval(() => {
+      setRemainingTime((prevTime) => {
+        if (prevTime <= 0) {
+          clearInterval(interval);
+          handleSubmit();
+          return 0; // Stop the timer when it reaches 0
+        }
+        return prevTime - 1; // Decrease remaining time by 1 second
+      });
+    }, 1000);
+    setTimerInterval(interval); // Store the interval ID
+  };
+
+  const stopTimer = () => {
+    clearInterval(timerInterval); // Clear the timer interval
+  };
+
+  // const handleSeeResult = () => {
+  //   stopTimer(); // Stop the timer when seeing results
+  //   setShowAnswer(true);
+  // };
+
 
   React.useEffect(() => {
     let url = process.env.API_URL + "quiz/questions/?quiz=" + quiz.id;
@@ -54,12 +91,22 @@ function SolveQuiz({ quiz }) {
   }, []);
 
   React.useEffect(() => {
-    let question;
-    let c = rightCount;
-    for (question of questions) {
-      if (question.selected == question.right_option) {
-        c = c + 1;
-      }
+    // let question;
+    // let c = rightCount;
+    // for (question of questions) {
+    //   if (question.selected == question.right_option) {
+    //     c = c + 1;
+    //   }
+    // }
+    let c = rightCount; // Initialize correct count
+    for (let question of questions) {
+        // Check if the question has been answered
+        if (question.selected !== undefined) {
+            // Only count if the selected answer is correct
+            if (question.selected == question.right_option) {
+                c += 1; // Increment correct count
+            }
+        }
     }
     setRightCount(c);
 
@@ -144,11 +191,16 @@ function SolveQuiz({ quiz }) {
         quizName={quiz.name}
       />
       {showAnswer && (
-        <QuizResult questions={questions} total_correct={rightCount} />
+        <QuizResult questions={questions} total_correct={rightCount} timeTaken={timer - remainingTime} timeRequired={quiz.time_required} />
       )}
 
       {!showAnswer && (
-        <div className="">
+        <div className="relative">
+        {started && quiz.time_required > 0 && ( // Only show timer if time is required
+          <div className="absolute bg-gray-800 text-white top-0 right-0 p-2 rounded-bl-lg z-10">
+            <div>Time Remaining: {Math.floor(remainingTime / 60)}:{remainingTime % 60 < 10 ? '0' : ''}{remainingTime % 60}</div>
+          </div>
+        )}
           {started ? (
             <div>
               <div class="card card-compact bg-base-100 shadow-xl">
@@ -160,7 +212,6 @@ function SolveQuiz({ quiz }) {
                   <div
                     dangerouslySetInnerHTML={{ __html: currentQuestion.text }}
                   />
-
                   {optionLoading && <div>Loading...</div>}
 
                   {!optionLoading && (
@@ -221,6 +272,7 @@ function SolveQuiz({ quiz }) {
                             data-aos="fade"
                             className="btn btn-primary"
                             onClick={handleSubmit}
+                            
                           >
                             See the Result
                           </button>
