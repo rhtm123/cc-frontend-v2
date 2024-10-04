@@ -185,10 +185,13 @@ function SolveQuiz({ quiz }) {
   return (
     <>
       <ContactModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        onSubmit={handleModalSubmit}
-        quizName={quiz.name}
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          onSubmit={handleModalSubmit}
+          quizName={quiz.name}
+          questions={questions} // Pass the questions array
+          rightCount={rightCount} // Pass the correct count
+          totalTime={timer - remainingTime} // Pass the total time taken
       />
       {showAnswer && (
         <QuizResult questions={questions} total_correct={rightCount} timeTaken={timer - remainingTime} timeRequired={quiz.time_required} />
