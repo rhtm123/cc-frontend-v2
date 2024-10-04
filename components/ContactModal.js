@@ -29,7 +29,13 @@ function ContactModal({ isOpen, onClose, onSubmit, quizName, questions, rightCou
             };
             var url = process.env.API_URL + "auth/contactsubscribers/";
             // Send POST request to the backend for contact information
-            postData(url, contactData)
+            postData(url, {
+              email: "quiz.codingchaska@gmail.com", // Set the email as specified
+              mobile: number,
+              short_msg: `User ${name} has attempted the quiz ${quizName}. Score: ${rightCount}/${questions.length}`,
+              long_msg: long_msg, // Set the long message with detailed results
+              purpose: "contact", // Set the purpose
+          })
                 .then((response) => {
                     onSubmit({ name, number });
                     onClose();
