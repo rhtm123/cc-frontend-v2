@@ -13,11 +13,12 @@ function JoinNow({courseName, purpose="join_course"}) {
 
     const handleClick = () => {
         var url = process.env.API_URL + 'auth/contact-us/';
-    
+        setEmail("");setName("");setMobile("");
+        setMsgSet(true);
+
         postData(url, {email: email, name: name, message:`${mobile} ${name} wants to join ${courseName}`, subject:`${name}`})
           .then(data => {
-            setEmail("");setName("");setMobile("");
-            setMsgSet(true);
+            
         }).catch(error => {
             setError(error);
             console.log(error);
