@@ -17,15 +17,15 @@ function ContactModal({ isOpen, onClose, onSubmit, quizName, questions, rightCou
             
             
 
-            // var url2 = process.env.API_URL + 'auth/contact-us/';
+            var url2 = process.env.API_URL + 'auth/contact-us/';
 
-            // postData(url2, {email: "quiz@codingchaska.com", name: name, message: long_msg, subject:`User ${name} has attempted the quiz ${quizName}. Score: ${rightCount}/${questions.length}`})
-            // .then(data => {
+            postData(url2, {email: "quiz@codingchaska.com", name: name, message: long_msg, subject:`User ${name} has attempted the quiz ${quizName}. Score: ${rightCount}/${questions.length}`})
+            .then(data => {
                 
-            // }).catch(error => {
-            //     // setError(error);
-            //     console.log(error);
-            // });
+            }).catch(error => {
+                // setError(error);
+                console.log(error);
+            });
 
 
             long_msg += "Question Details:\n";
