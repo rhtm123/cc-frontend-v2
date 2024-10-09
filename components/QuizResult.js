@@ -33,6 +33,7 @@
 import Options from "./Options";
 
 function QuizResult({ questions = [], total_correct, timeTaken, timeRequired }) {
+    console.log(total_correct)
     const percentage = Math.round((total_correct / questions.length * 100));
     let courseSuggestion = "";
 

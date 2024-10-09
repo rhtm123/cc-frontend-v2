@@ -24,7 +24,8 @@ function SolveQuiz({ quiz }) {
 
   const handleSubmit = () => {
     addRight();
-    console.log("Allowed to:", quiz.allowed_to); // Debugging line
+    checkRightCount();
+    // console.log("Allowed to:", quiz.allowed_to); // Debugging line
     if (quiz && quiz.allowed_to === 2) {
       setIsModalOpen(true);
       stopTimer(); // Open modal if allowed_to is 2
@@ -91,14 +92,7 @@ function SolveQuiz({ quiz }) {
       .catch((error) => {});
   }, []);
 
-  React.useEffect(() => {
-    // let question;
-    // let c = rightCount;
-    // for (question of questions) {
-    //   if (question.selected == question.right_option) {
-    //     c = c + 1;
-    //   }
-    // }
+  const checkRightCount = () => { 
     let c = rightCount; // Initialize correct count
     for (let question of questions) {
         // Check if the question has been answered
@@ -110,6 +104,16 @@ function SolveQuiz({ quiz }) {
         }
     }
     setRightCount(c);
+  }
+
+  React.useEffect(() => {
+    // let question;
+    // let c = rightCount;
+    // for (question of questions) {
+    //   if (question.selected == question.right_option) {
+    //     c = c + 1;
+    //   }
+    // }
 
     // if (session && showAnswer){
     //   let url = process.env.API_URL + 'quiz/user_quiz/'+userquiz.id+'/'
