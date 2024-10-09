@@ -5,23 +5,27 @@ function ContactModal({ isOpen, onClose, onSubmit, quizName, questions, rightCou
     const [name, setName] = React.useState("");
     const [number, setNumber] = React.useState("");
 
+    // console.log(questions, rightCount);
+
     const handleSubmit = () => {
+        // console.log(questions);
         if (name && number) {
             // Prepare the long message with detailed quiz results
             let long_msg = `Quiz Name: ${quizName}\n`;
             long_msg += `Total Score: ${rightCount}/${questions.length}\n`;
             long_msg += `Time Taken for the Quiz: ${Math.floor(totalTime / 60)}:${totalTime % 60 < 10 ? '0' : ''}${totalTime % 60} minutes\n\n`;
             
+            
 
-            var url2 = process.env.API_URL + 'auth/contact-us/';
+            // var url2 = process.env.API_URL + 'auth/contact-us/';
 
-            postData(url2, {email: "quiz@codingchaska.com", name: name, message: long_msg, subject:`User ${name} has attempted the quiz ${quizName}. Score: ${rightCount}/${questions.length}`})
-            .then(data => {
+            // postData(url2, {email: "quiz@codingchaska.com", name: name, message: long_msg, subject:`User ${name} has attempted the quiz ${quizName}. Score: ${rightCount}/${questions.length}`})
+            // .then(data => {
                 
-            }).catch(error => {
-                // setError(error);
-                console.log(error);
-            });
+            // }).catch(error => {
+            //     // setError(error);
+            //     console.log(error);
+            // });
 
 
             long_msg += "Question Details:\n";

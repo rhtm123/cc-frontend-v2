@@ -23,6 +23,7 @@ function SolveQuiz({ quiz }) {
   const [timerInterval, setTimerInterval] = React.useState(null); // Timer interval
 
   const handleSubmit = () => {
+    addRight();
     console.log("Allowed to:", quiz.allowed_to); // Debugging line
     if (quiz && quiz.allowed_to === 2) {
       setIsModalOpen(true);
@@ -118,7 +119,7 @@ function SolveQuiz({ quiz }) {
     //                 this.setState({})
     //       })
     //   }
-  }, [showAnswer]);
+  }, [showAnswer, isModalOpen]);
 
   const loadOptions = (quesID) => {
     var url = process.env.API_URL + "quiz/options/?question=" + quesID;
@@ -184,6 +185,7 @@ function SolveQuiz({ quiz }) {
 
   return (
     <>
+      {isModalOpen &&
       <ContactModal
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
@@ -193,6 +195,8 @@ function SolveQuiz({ quiz }) {
           rightCount={rightCount} // Pass the correct count
           totalTime={timer - remainingTime} // Pass the total time taken
       />
+      }
+
       {showAnswer && (
         <QuizResult questions={questions} total_correct={rightCount} timeTaken={timer - remainingTime} timeRequired={quiz.time_required} />
       )}
@@ -276,7 +280,7 @@ function SolveQuiz({ quiz }) {
                             onClick={handleSubmit}
                             
                           >
-                            See the Result
+                            Show Result
                           </button>
                         </div>
                       )}

@@ -1,6 +1,8 @@
 
 
-import React from 'react'
+import React from 'react';
+import { FaCheck, FaTimes } from 'react-icons/fa';
+
 
 const Options = ({question, questionID}) => {
 
@@ -30,8 +32,10 @@ const Options = ({question, questionID}) => {
                               {options.map((option,key)=>
                                   <div key={key}>
                                   {(question.right_option==option.id) &&
-                                      <div style={{ 'margin':'0.3em 0em', 'padding':'0.4em', 'border': '1px solid green', 'borderRadius':'1em' }}>
-                                      <span style={{ paddingLeft:"5px"  }}>{option.text}</span>
+                                      <div className="flex items-center justify-between" style={{ 'margin':'0.3em 0em', 'padding':'0.4em', 'border': '1px solid green', 'borderRadius':'1em' }}>
+                                      <span style={{ paddingLeft:"5px"  }}>{option.text}</span> 
+                                      <FaCheck color="green" />
+
                                       
                                       </div> ||
                                   (question.right_option != option.id) && <div style={{ 'margin':'0.3em 0em', 'padding':'0.4em'}}>
@@ -41,23 +45,22 @@ const Options = ({question, questionID}) => {
                                   </div>
                               )}
   
-  
-  
                           </div>: 
                               <div>
                               {options.map((option,key)=>
                                   <div key={key}>
                                       { (question.right_option==option.id) &&
-                                      <div style={{ 'margin':'0.3em 0em', 'padding':'0.4em', 'border': '1px solid green', 'borderRadius':'1em'}}>
-  
+                                      <div className="flex items-center justify-between" style={{ 'margin':'0.3em 0em', 'padding':'0.4em', 'border': '1px solid green', 'borderRadius':'1em'}}>
+                                        
                                       <span style={{ paddingLeft:"5px"  }}>{option.text}</span>
-                                      
+                                      <FaCheck color="green" />
+
                                       </div>  ||
   
                                        (question.selected==option.id) &&
-                                      <div style={{ 'margin':'0.3em 0em', 'padding':'0.4em', 'border': '1px solid red', 'borderRadius':'1em'}}>
-  
+                                      <div className="flex items-center justify-between" style={{ 'margin':'0.3em 0em', 'padding':'0.4em', 'border': '1px solid red', 'borderRadius':'1em'}}>
                                       <span style={{ paddingLeft:"5px"  }}>{option.text}</span>
+                                      <FaTimes color="red" />
                                       
                                       </div> ||
                                           (true) && <div style={{ 'margin':'0.3em 0em', 'padding':'0.4em'}}>
