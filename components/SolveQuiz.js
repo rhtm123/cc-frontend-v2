@@ -253,7 +253,7 @@ function SolveQuiz({ quiz }) {
                     </div>
                   )}
 
-
+                  {!optionLoading &&
                   <div class="card-actions flex justify-between	">
                     <div>
                       {currentCount > 0 && (
@@ -290,6 +290,9 @@ function SolveQuiz({ quiz }) {
                       )}
                     </div>
                   </div>
+                  }
+
+
                 </div>
               </div>
 
