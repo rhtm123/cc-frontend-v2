@@ -93,7 +93,7 @@ function SolveQuiz({ quiz }) {
   }, []);
 
   const checkRightCount = () => { 
-    let c = rightCount; // Initialize correct count
+    let c = 0; // Initialize correct count
     for (let question of questions) {
         // Check if the question has been answered
         if (question.selected !== undefined) {
@@ -178,14 +178,6 @@ function SolveQuiz({ quiz }) {
       }
     }
   };
-
-  // const handleSubmit = () => {
-  //     // startQuiz()
-  //     addRight();
-  //     setShowAnswer(true);
-  //     // setAlreadyAttempted(true);
-
-  // }
 
   return (
     <>
