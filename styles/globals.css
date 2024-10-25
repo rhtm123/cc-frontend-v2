@@ -37,3 +37,128 @@ body {
       transform: scale(1, 1);
     }
   }
+
+
+
+  /* certificate.css */
+.certificate {
+  width: 800px;
+  margin: 50px auto;
+  padding: 0px;
+  border: 10px solid #0048A4;
+  border-image: linear-gradient(to right, #0048A4, #E35A01);
+  border-image-slice: 1;
+  position: relative;
+  background-color: white;
+}
+
+.certificate:after {
+  content: '';
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+  background-image: url(https://res.cloudinary.com/drurbfz7c/image/upload/v1701084595/static/blue-logo-2.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.inner-certificate {
+  border: 10px solid #E35A01;
+  border-image: linear-gradient(to right, #E35A01, #0048A4);
+  border-image-slice: 1;
+  position: relative;
+  padding: 20px 40px;
+  z-index: 1;
+}
+
+.header {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #E35A01;
+  padding: 10px 0px;
+}
+
+.content {
+  margin: 20px 0px;
+  position: relative;
+  z-index: 2;
+}
+
+.university-logo {
+  display: block;
+  margin: 0 auto;
+  width: 160px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.initiative-line {
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+  color: #333;
+}
+
+.student-info {
+  margin: -10px 0px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: -10px;
+  position: relative;
+  z-index: 2;
+}
+
+.footer .qr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #555;
+}
+
+.qr img {
+  width: 100px;
+  height: auto;
+}
+
+.qr .scan {
+  font-size: 0.8rem;
+  padding-left: 10px;
+}
+
+.qr .certi-id {
+  font-weight: bold;
+}
+
+.signature {
+  text-align: right;
+}
+
+.signature img {
+  width: 80px;
+  height: auto;
+  margin-top: 0px;
+}
+
+.signature .director {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: -10px;
+}
+
+@media print {
+  .certificate {
+    margin: 0;
+    border: none;
+  }
+}
