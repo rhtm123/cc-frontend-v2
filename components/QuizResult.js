@@ -29,12 +29,12 @@
 // }
 
 // export default QuizResult;
-
+import React from "react";
 import Options from "./Options";
+import Certificate from "./Certificate";
 
-function QuizResult({ questions = [], total_correct, timeTaken, timeRequired }) {
-    // console.log(questions, total_correct, timeTaken);
-    // console.log(total_correct)
+function QuizResult({ questions = [], total_correct, timeTaken, timeRequired, userName, quizName }) {
+    const [showCertificate, setShowCertificate] = React.useState(false);
     const percentage = Math.round((total_correct / questions.length * 100));
     let courseSuggestion = "";
 
@@ -51,9 +51,29 @@ function QuizResult({ questions = [], total_correct, timeTaken, timeRequired }) 
 
     return (
         <div>
-            <h3 style={{ textAlign: "center" }}>
-                Score: {percentage}% ({total_correct}/{questions.length}) | Time Taken: {Math.floor(timeTaken / 60)}:{timeTaken % 60 < 10 ? '0' : ''}{timeTaken % 60} minutes
-            </h3>
+            <div className="text-center mb-8">
+                <h3>
+                    Score: {percentage}% ({total_correct}/{questions.length}) | 
+                    Time Taken: {Math.floor(timeTaken / 60)}:{timeTaken % 60 < 10 ? '0' : ''}{timeTaken % 60} minutes
+                </h3>
+                
+                <button 
+                    onClick={() => setShowCertificate(true)}
+                    className="btn btn-primary mt-4"
+                >
+                    View Certificate
+                </button>
+            </div>
+
+            <Certificate 
+                isOpen={showCertificate}
+                onClose={() => setShowCertificate(false)}
+                name={userName}
+                quizName={quizName} // Assuming quiz_name is available in questions
+                score={total_correct}
+                totalQuestions={questions.length}
+                date={new Date().toISOString()}
+            />
                 {/* <h4 style={{ textAlign: "center", marginTop: "20px" }}>{courseSuggestion}</h4> */}
             <br />
             {questions.map((question, key) => (

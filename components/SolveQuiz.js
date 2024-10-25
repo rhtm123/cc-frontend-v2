@@ -16,7 +16,8 @@ function SolveQuiz({ quiz }) {
   const [selected, setSelected] = React.useState();
   const [count, setCount] = React.useState(0);
   const [isModalOpen, setIsModalOpen] = React.useState(false);
-  const [userDetails, setUserDetails] = React.useState(null);
+  const [userName, setUserName] = React.useState("");
+  const [userDetails, setUserDetails] = React.useState("null");
 
   // Timer state
   const [timer, setTimer] = React.useState(0); // Total time in seconds
@@ -50,7 +51,8 @@ function SolveQuiz({ quiz }) {
   const handleModalSubmit = (details) => {
     // console.log("User Details:", details); // Debugging line
     // Logic to handle user details
-
+    setUserName(details.name);
+    setShowAnswer(true);
     setShowAnswer(true);
   };
 
@@ -206,7 +208,7 @@ function SolveQuiz({ quiz }) {
       }
 
       {showAnswer && (
-        <QuizResult questions={questions} total_correct={rightCount} timeTaken={timer - remainingTime} timeRequired={quiz.time_required} />
+        <QuizResult quizName={quiz.name} questions={questions} total_correct={rightCount} timeTaken={timer - remainingTime} timeRequired={quiz.time_required} userName={userName} />
       )}
 
       {!showAnswer && (
