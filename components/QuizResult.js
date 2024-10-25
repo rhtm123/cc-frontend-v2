@@ -33,7 +33,8 @@
 import Options from "./Options";
 
 function QuizResult({ questions = [], total_correct, timeTaken, timeRequired }) {
-    console.log(total_correct)
+    // console.log(questions, total_correct, timeTaken);
+    // console.log(total_correct)
     const percentage = Math.round((total_correct / questions.length * 100));
     let courseSuggestion = "";
 
@@ -51,7 +52,7 @@ function QuizResult({ questions = [], total_correct, timeTaken, timeRequired }) 
     return (
         <div>
             <h3 style={{ textAlign: "center" }}>
-                Your Score: {percentage}% ({total_correct}/{questions.length}) | Time Taken: {Math.floor(timeTaken / 60)}:{timeTaken % 60 < 10 ? '0' : ''}{timeTaken % 60} minutes
+                Score: {percentage}% ({total_correct}/{questions.length}) | Time Taken: {Math.floor(timeTaken / 60)}:{timeTaken % 60 < 10 ? '0' : ''}{timeTaken % 60} minutes
             </h3>
                 {/* <h4 style={{ textAlign: "center", marginTop: "20px" }}>{courseSuggestion}</h4> */}
             <br />

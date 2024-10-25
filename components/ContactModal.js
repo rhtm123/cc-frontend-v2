@@ -7,6 +7,22 @@ function ContactModal({ isOpen, onClose, onSubmit, quizName, questions, rightCou
 
     // console.log(questions, rightCount);
 
+
+    const saveResponseServer = async () => {
+
+        let response = {
+            "rightCount": rightCount,
+            "timeTaken": totalTime,
+            "totalQuestions": questions.length,
+            "questions": questions,
+            "name": "Name",
+          }
+      
+          let url = process.env.API_URL  + "quiz/user_quizzes/"
+          let data = await postData(url, {quiz_id: quiz.id, response: response}, "POST")
+        //   console.log(data);
+    }
+
     const handleSubmit = () => {
         // console.log(questions);
         if (name && number) {

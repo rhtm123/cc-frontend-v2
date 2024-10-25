@@ -1,6 +1,7 @@
 import React from "react";
 import QuizResult from "./QuizResult";
 import ContactModal from "./ContactModal";
+import { postData } from "@/utils/auth";
 
 function SolveQuiz({ quiz }) {
   const [questions, setQuestions] = React.useState([]);
@@ -22,9 +23,14 @@ function SolveQuiz({ quiz }) {
   const [remainingTime, setRemainingTime] = React.useState(0); // Remaining time
   const [timerInterval, setTimerInterval] = React.useState(null); // Timer interval
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     addRight();
     checkRightCount();
+
+
+
+ 
+
     // console.log("Allowed to:", quiz.allowed_to); // Debugging line
     if (quiz && quiz.allowed_to === 2) {
       setIsModalOpen(true);
@@ -34,10 +40,15 @@ function SolveQuiz({ quiz }) {
       stopTimer();
       setShowAnswer(true);
     }
+
+
+
+    // console.log(response);
+
   };
 
   const handleModalSubmit = (details) => {
-    console.log("User Details:", details); // Debugging line
+    // console.log("User Details:", details); // Debugging line
     // Logic to handle user details
 
     setShowAnswer(true);
@@ -104,6 +115,7 @@ function SolveQuiz({ quiz }) {
         }
     }
     setRightCount(c);
+    return c;
   }
 
   React.useEffect(() => {
