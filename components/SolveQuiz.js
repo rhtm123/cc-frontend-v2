@@ -24,13 +24,33 @@ function SolveQuiz({ quiz }) {
   const [remainingTime, setRemainingTime] = React.useState(0); // Remaining time
   const [timerInterval, setTimerInterval] = React.useState(null); // Timer interval
 
+  React.useEffect(() => {
+    // Reset component state when quiz data changes
+    if (quiz) {
+      setQuestions([]);
+      setStarted(false);
+      setCurrentQuestion({});
+      setOptions([]);
+      setCurrentCount(0);
+      setOptionLoading(false);
+      setShowAnswer(false);
+      setRightCount(0);
+      setSelected(null);
+      setIsModalOpen(false);
+      setUserName("");
+      setTimer(quiz.time_required * 60 || 0); // Set timer based on quiz duration
+      setRemainingTime(quiz.time_required * 60 || 0);
+      clearInterval(timerInterval);
+
+      // Fetch new questions for the updated quiz
+      fetchQuestions(quiz.id);
+    }
+  }, [quiz]);
+
+  
   const handleSubmit = async () => {
     addRight();
     checkRightCount();
-
-
-
- 
 
     // console.log("Allowed to:", quiz.allowed_to); // Debugging line
     if (quiz && quiz.allowed_to === 2) {
@@ -41,8 +61,6 @@ function SolveQuiz({ quiz }) {
       stopTimer();
       setShowAnswer(true);
     }
-
-
 
     // console.log(response);
 
@@ -89,8 +107,7 @@ function SolveQuiz({ quiz }) {
   //   setShowAnswer(true);
   // };
 
-
-  React.useEffect(() => {
+  const fetchQuestions = () => {
     let url = process.env.API_URL + "quiz/questions/?quiz=" + quiz.id;
     fetch(url)
       .then(async (response) => {
@@ -103,7 +120,8 @@ function SolveQuiz({ quiz }) {
         }
       })
       .catch((error) => {});
-  }, []);
+
+   }
 
   const checkRightCount = () => { 
     let c = 0; // Initialize correct count
@@ -121,22 +139,6 @@ function SolveQuiz({ quiz }) {
   }
 
   React.useEffect(() => {
-    // let question;
-    // let c = rightCount;
-    // for (question of questions) {
-    //   if (question.selected == question.right_option) {
-    //     c = c + 1;
-    //   }
-    // }
-
-    // if (session && showAnswer){
-    //   let url = process.env.API_URL + 'quiz/user_quiz/'+userquiz.id+'/'
-    //   postDataAuth(url,user.access,{total_correct:c},'PATCH')
-    //               .then(data => {
-    //               }).catch(error => {
-    //                 this.setState({})
-    //       })
-    //   }
   }, [showAnswer, isModalOpen]);
 
   const loadOptions = (quesID) => {

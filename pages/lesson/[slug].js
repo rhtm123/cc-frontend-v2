@@ -14,7 +14,7 @@ function LessonPage({data, error}) {
 
     const [course, setCourse] = React.useState({});
     const [topics, setTopics] = React.useState([]);
-    const [loading, setLoading] = React.useState(false);
+    // const [loading, setLoading] = React.useState(false);
 
     const [nextPrevious, setNextPrevious] = React.useState();
 
@@ -142,7 +142,6 @@ function LessonPage({data, error}) {
                         <br />
                         <br />
                     </div>
-
             }
 
 
