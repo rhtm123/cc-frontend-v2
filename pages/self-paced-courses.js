@@ -30,7 +30,7 @@ function SelfPacedCoursesPage() {
         <meta name="description" content="Master essential tech skills with our self-paced online courses. Learn Computer Basics, Python, JavaScript, HTML & CSS from anywhere, anytime. Start your tech journey today" />
       </Head>
 
-        <div className="container max-w-none">
+  <div className="container max-w-none">
 
         <div className="text-sm breadcrumbs">
   <ul>
