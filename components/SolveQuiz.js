@@ -210,7 +210,7 @@ function SolveQuiz({ quiz }) {
       }
 
       {showAnswer && (
-        <QuizResult quizName={quiz.name} questions={questions} total_correct={rightCount} timeTaken={timer - remainingTime} timeRequired={quiz.time_required} userName={userName} />
+        <QuizResult quizName={quiz.name} questions={questions} total_correct={rightCount} timeTaken={timer - remainingTime} timeRequired={quiz.time_required} userName={userName} quiz={quiz} />
       )}
 
       {!showAnswer && (

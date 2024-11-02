@@ -89,13 +89,14 @@ const Certificate = ({
           >
             <Share2 size={16} /> Share
           </button>
-          <button onClick={onClose} className="btn btn-ghost btn-sm">
+          <button onClick={onClose} className="btn btn-sm">
             Close
           </button>
         </div>
 
-        <div ref={certificateRef} className="p-8 bg-white">
+        <div ref={certificateRef} className="p-0 bg-white">
           <div className="certificate">
+            <div className="bg-base-100">
             <div className="inner-certificate">
               <div className="content">
                 <img
@@ -104,7 +105,7 @@ const Certificate = ({
                   className="university-logo"
                   crossOrigin="anonymous"
                 />
-                <div className="initiative-line">
+                <div className="text-center">
                   An initiative of Learning Setu Private Limited
                   <br />
                   <a
@@ -155,12 +156,13 @@ const Certificate = ({
                   <p className="director">Rohit Maurya</p>
                   <p>Founder & Director</p>
                   <img
-                    src="https://codingchaska.up.railway.app/static/img/rohit_sign.png"
+                    src="https://thelearningsetu.com/static/img/rohit_sign.png"
                     alt="Signature"
                     crossOrigin="anonymous"
                   />
                 </div>
               </div>
+            </div>
             </div>
           </div>
         </div>

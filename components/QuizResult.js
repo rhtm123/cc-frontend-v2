@@ -33,7 +33,7 @@ import React from "react";
 import Options from "./Options";
 import Certificate from "./Certificate";
 
-function QuizResult({ questions = [], total_correct, timeTaken, timeRequired, userName, quizName }) {
+function QuizResult({ questions = [], total_correct, timeTaken, timeRequired, userName, quizName, quiz }) {
     const [showCertificate, setShowCertificate] = React.useState(false);
     const percentage = Math.round((total_correct / questions.length * 100));
     let courseSuggestion = "";
@@ -57,12 +57,14 @@ function QuizResult({ questions = [], total_correct, timeTaken, timeRequired, us
                     Time Taken: {Math.floor(timeTaken / 60)}:{timeTaken % 60 < 10 ? '0' : ''}{timeTaken % 60} minutes
                 </h3>
                 
+                {quiz.allowed_to>1 && 
                 <button 
                     onClick={() => setShowCertificate(true)}
                     className="btn btn-primary mt-4"
                 >
                     View Certificate
-                </button>
+                </button> 
+                }
             </div>
 
             <Certificate 
