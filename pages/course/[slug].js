@@ -8,7 +8,7 @@ import Topic from "@/components/Topic";
 function CoursePage({data,error}) {
 
     const [activeTab, setActiveTab] = React.useState("content");
-
+    const [loading, setLoading ] = React.useState(false);
     const [topics, setTopics] = React.useState([]);
 
 
@@ -87,8 +87,10 @@ function CoursePage({data,error}) {
 </div>
 
 {activeTab=="content" && <div>
-    <br />
-    <div className="menu bg-base-200 rounded-box">
+
+    <div className="my-4 menu bg-base-200 rounded-box">
+
+    {loading && <span className="loading loading-dots loading-sm"></span>      }
     {topics.map((topic, index) => 
     
     <Topic topic={topic} />

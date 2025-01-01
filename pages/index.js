@@ -36,19 +36,19 @@ export default function Home() {
     {/* Buttons */}
     <div className="mt-7 grid gap-3 w-full sm:inline-flex">
       <Link
-        data-aos="fade" className="btn btn-outline btn-primary"
+        className="btn btn-outline btn-primary"
         href="/programs"
       >
         Programs
       </Link>
       <Link
-        data-aos="fade" className="btn btn-outline btn-primary"
+        className="btn btn-outline btn-primary"
         href="/live-courses"
       >
         Live Courses
       </Link>
       <Link
-        data-aos="fade" className="btn btn-outline btn-primary"
+        className="btn btn-outline btn-primary"
         href="/self-paced-courses"
       >
         Self Paced Courses

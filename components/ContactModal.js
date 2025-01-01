@@ -79,7 +79,7 @@ function ContactModal({ isOpen, onClose, onSubmit, quizName, questions, rightCou
     if (!isOpen) return null;
 
     return (
-        <div className="bg-primary font-[sans-serif] fixed inset-0 flex items-center justify-center bg-opacity-50 backdrop-blur-sm z-50">
+        <div className="bg-primary  fixed inset-0 flex items-center justify-center bg-opacity-50 backdrop-blur-sm z-50">
             <div className="bg-base-200 rounded-lg shadow-md p-6 max-w-3xl w-full flex flex-col lg:flex-row lg:space-x-8">
                 {/* Form Section */}
                 <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
