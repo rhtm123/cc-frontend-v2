@@ -3,6 +3,11 @@ import Link from "next/link";
 
 function AboutPage() {
 
+
+
+    return (
+        <>
+
   <Head>
     <title>About Us | Coding Chaska - Empowering India's Tech Future</title>
     <meta name="description" content="Discover Coding Chaska's vision for India's tech leadership. Join our family-oriented institute and develop your passion for coding. Transform your career and contribute to India's innovation hub." />
@@ -10,8 +15,7 @@ function AboutPage() {
     <link rel="canonical" href="https://codingchaska.com/about" />
   </Head>
 
-    return (
-        <>
+
         <div className="px-4 max-w-none">
             {/* breadcrumbs */}
 

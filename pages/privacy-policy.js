@@ -4,7 +4,7 @@ import Head from "next/head";
 function PrivacyPolicyPage() {
     return ( 
         <>
-           <Head>
+      <Head>
         <title>Privacy Policy | Coding Chaska </title>
         <meta name="description" content="Read the Privacy Policy of Learning Setu Private Limited" />
       </Head>

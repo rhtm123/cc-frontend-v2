@@ -6,7 +6,7 @@ function Profile(){
 
     return (
         <>
-     <Head>
+      <Head>
         <title>Profile | Coding Chaska </title>
         <meta name="description" content="Login to Coding Chaska and start your journey of learning" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
