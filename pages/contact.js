@@ -112,6 +112,8 @@ function ContactPage() {
         <>
             <Head>
                 <title>Contact | Coding Chaska</title>
+                <meta name="keywords" content="Contact Coding Chaska, Contact at Naigaon East, Mumbai" />
+
                 <meta name="description" content="Want to learn Programming, Python, Website Development, Data Science? Feel free to contact us. We look forward to hearing from you" />
             </Head>
             <div className="container max-w-none">
@@ -141,7 +143,7 @@ function ContactPage() {
                         <p>codingchaska.info@gmail.com</p>
                         <p>+91 9518-90-1902, +91 9370-39-4747</p>
                         <br />
-                        <p>005, Jay Vijay Nagar Building 3, Opposite Seven Square Academy School, Naigaon East, Maharashtra</p>
+                        <p>005, Jay Vijay Nagar Building 3, Opposite Seven Square Academy School, Naigaon East, Mumbai, Maharashtra</p>
                         <br />
                     </div>
 

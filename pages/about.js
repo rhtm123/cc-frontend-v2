@@ -11,7 +11,7 @@ function AboutPage() {
   <Head>
     <title>About Us | Coding Chaska - Empowering India's Tech Future</title>
     <meta name="description" content="Discover Coding Chaska's vision for India's tech leadership. Join our family-oriented institute and develop your passion for coding. Transform your career and contribute to India's innovation hub." />
-    <meta name="keywords" content="Coding Chaska, IT training, tech education, India, innovation hub, coding passion" />
+    <meta name="keywords" content="Coding Chaska, IT training, tech education, Naigaon East, Mumbai, innovation hub, coding passion" />
     <link rel="canonical" href="https://codingchaska.com/about" />
   </Head>
 
