@@ -10,7 +10,7 @@ function Course({ course }) {
       data-aos="fade"
       className="card bg-base-100 shadow hover:shadow-xl transition-shadow duration-300 rounded-2xl overflow-hidden"
     >
-      <Link href={`/course/${course.slug}`}>
+      <Link href={`/live-course/${course.slug}`}>
         <figure className="relative h-48 w-full overflow-hidden">
           <LazyImageLoad
             src={course.image}
