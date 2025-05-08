@@ -284,7 +284,7 @@ export default function Home() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="http://www.codingchaskalab.com/coding-problems"
+                href="http://www.lab.codingchaska.com/coding-problems"
               >
                 <button
                   data-aos="fade-left"
@@ -353,7 +353,7 @@ export default function Home() {
               <a
                 rel="noopener noreferrer"
                 target="_blank"
-                href="http://www.codingchaskalab.com"
+                href="http://www.lab.codingchaska.com"
                 className="btn btn-primary px-8 text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
                 data-aos="fade-up"
                 data-aos-delay="300"
