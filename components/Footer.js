@@ -72,8 +72,8 @@ function Footer() {
           <h4 className="footer-title text-xl font-semibold">Explore</h4>
           <ul className="space-y-2">
             <li><Link className="link link-hover block" href="/programs">Our Programs</Link></li>
-            <li><a className="link link-hover block" rel="noreferrer" target="_blank" href="http://www.lab.codingchaska.com/coding-problems">Coding Problems</a></li>
-            <li><a className="link link-hover block" rel="noreferrer" target="_blank" href="http://www.lab.codingchaska.com">Write Code Online</a></li>
+            <li><a className="link link-hover block" rel="noreferrer" target="_blank" href="https://lab.codingchaska.com/coding-problems">Coding Problems</a></li>
+            <li><a className="link link-hover block" rel="noreferrer" target="_blank" href="https://lab.codingchaska.com">Write Code Online</a></li>
             <li><Link className="link link-hover block" href="/self-paced-courses">Self Paced Courses</Link></li>
             <li><Link className="link link-hover block" href="/live-courses">Live Courses</Link></li>
             <li><Link className="link link-hover block" href="/quizzes">Solve MCQs</Link></li>

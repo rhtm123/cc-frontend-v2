@@ -102,7 +102,7 @@ function CCEditorWrapperEmbed({ project, embed = false }) {
   return (<activeFileContext.Provider value={{ activeFile, setActiveFile }}>
 
     <a rel="noreferrer" target="_blank"
-      href={"http://www.lab.codingchaska.com/online-editor/" + project.lang.prog_lang + "/" + project.slug}>
+      href={"https://lab.codingchaska.com/online-editor/" + project.lang.prog_lang + "/" + project.slug}>
       <button style={{ "margin-bottom": 10 }} data-aos="fade" className="btn btn-primary">Run this project</button></a>
     <div>
 

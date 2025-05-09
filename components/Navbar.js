@@ -55,10 +55,10 @@ function Navbar() {
                     <li><Link href="/quick-tutorials">Quick Tutorials</Link></li>
 
                     <li>
-                      <a rel="noreferrer" target='_blank' href="http://www.lab.codingchaska.com/coding-problems"><span className="menu-text">Coding Problems</span></a>
+                      <a rel="noreferrer" target='_blank' href="https://lab.codingchaska.com/coding-problems"><span className="menu-text">Coding Problems</span></a>
                     </li>
                     <li>
-                      <a rel="noreferrer" target='_blank' href="http://www.lab.codingchaska.com/"><span className="menu-text">Write Code Online</span></a>
+                      <a rel="noreferrer" target='_blank' href="https://lab.codingchaska.com/"><span className="menu-text">Write Code Online</span></a>
                     </li>
 
                   </ul>
@@ -86,10 +86,10 @@ function Navbar() {
                   <li><Link href="/quick-tutorials">Quick Tutorials</Link></li>
 
                   <li>
-                    <a rel="noreferrer" target='_blank' href="http://www.lab.codingchaska.com/coding-problems"><span className="menu-text">Coding Problems</span></a>
+                    <a rel="noreferrer" target='_blank' href="https://lab.codingchaska.com/coding-problems"><span className="menu-text">Coding Problems</span></a>
                   </li>
                   <li>
-                    <a rel="noreferrer" target='_blank' href="http://www.lab.codingchaska.com"><span className="menu-text">Write Code Online</span></a>
+                    <a rel="noreferrer" target='_blank' href="https://lab.codingchaska.com"><span className="menu-text">Write Code Online</span></a>
                   </li>
 
                 </ul>
@@ -114,10 +114,10 @@ function Navbar() {
             <li><Link href="/quick-tutorials">Quick Tutorials</Link></li>
 
             <li>
-                <a rel="noreferrer" target='_blank' href="http://www.lab.codingchaska.com/coding-problems"><span className="menu-text">Coding Problems</span></a>
+                <a rel="noreferrer" target='_blank' href="https://lab.codingchaska.com/coding-problems"><span className="menu-text">Coding Problems</span></a>
             </li> 
             <li>
-                <a rel="noreferrer" target='_blank' href="http://www.lab.codingchaska.com"><span className="menu-text">Write Code Online</span></a>
+                <a rel="noreferrer" target='_blank' href="https://lab.codingchaska.com"><span className="menu-text">Write Code Online</span></a>
             </li>  */}
 
                   </ul>
